@@ -117,7 +117,7 @@ export default function NugaPage() {
 
                   <div className="mt-6 flex justify-center gap-4 rounded-2xl bg-[#506c35] p-4 text-center text-white">
                     <a
-                      href="/pdf/nuga.pdf"
+                      href="/pdf/Nuga.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="font-semibold"

@@ -13,7 +13,7 @@ const highlights: Highlight[] = [
   { key: "builtFromRealFieldPractice", image: "/images/product/1.jpg" },
   { key: "madeForOrganicFarming", image: "/images/product/2.JPG" },
   { key: "autonomousEfficient", image: "/images/product/4.JPG" },
-  { key: "integratedReseeding", image: "/images/product/3.JPG" }
+  { key: "integratedReseeding", image: "/images/product/3.png" }
 ];
 
 export default function Benefits() {

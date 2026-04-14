@@ -23,7 +23,7 @@ export default function Team() {
           >
             <div className="overflow-hidden rounded-[30px] border border-[#06131f]/8 bg-[#eef2f1] shadow-[0_24px_70px_rgba(6,19,31,0.08)]">
               <img
-                src="/images/about/team.jpg"
+                src="/images/about/team.jpeg"
                 alt={t("imageAlt")}
                 className="h-full w-full object-cover"
               />
