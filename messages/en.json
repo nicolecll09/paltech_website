@@ -616,8 +616,8 @@
     "ContactForm": {
       "pageNameFallback": "Contact Form",
       "header": {
-        "eyebrow": "Contact",
-        "title": "Contact / Inquiry Form",
+        "eyebrow": "",
+        "title": "Contact",
         "description": "Fill out the form below and we will get back to you as soon as possible."
       },
       "requestType": {

@@ -21,7 +21,7 @@
     "biobots": "BioBots",
     "arbot": "Arbot",
 
-    "form": "Formular",
+    "form": "Form",
     "events": "Veranstaltungen"
   }, 
 
@@ -731,7 +731,7 @@
 
 
   "Events": {
-    "eyebrow": "Events",
+    "eyebrow": "Veranstaltungen",
     "description": "Unsere Vorführungstermine sind bewusst flexibel geplant. Den genauen Ort und Zeitpunkt teilen wir dir in der Woche vorher mit – abhängig von Wetter und Aufwuchs können sich noch Änderungen ergeben.",
     "items": [
       {
