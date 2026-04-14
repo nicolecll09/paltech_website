@@ -9,9 +9,8 @@ type VideoSlide = {
 };
 
 const slides: VideoSlide[] = [
-  { id: 1, src: "/videos/hero.mp4" },
-  { id: 2, src: "/videos/hero.mp4" },
-  { id: 3, src: "/videos/hero.mp4" },
+  { id: 1, src: "/videos/hero.gif" },
+
 ];
 
 export default function Cover() {

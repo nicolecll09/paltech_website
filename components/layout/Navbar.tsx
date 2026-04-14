@@ -43,7 +43,6 @@ const navItems: NavItem[] = [
       { key: "neobot", href: "/neobot" },
       { key: "potatoControl", href: "/durchwuchskartoffeln" },
       { key: "biobots", href: "/biobots" },
-      { key: "arbot", href: "/arbots" }
     ]
   },
   {

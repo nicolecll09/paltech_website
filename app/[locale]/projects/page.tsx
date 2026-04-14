@@ -2,11 +2,12 @@
 
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-
+import Projects from "@/components/sections/Projects/Projects";
 export default function Page() {
   return (
     <main className="min-h-screen  text-white">
       <Navbar />
+      <Projects />
       <Footer />
     </main>
   );
