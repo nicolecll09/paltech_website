@@ -27,7 +27,7 @@ export default function Hero() {
   const slides: Slide[] = [
     {
       id: 1,
-      videoSrc: "/videos/hero.gif",
+      videoSrc: "/videos/hero.mp4",
       title: t("slide1.title"),
       subtitle: t("slide1.subtitle"),
       primaryButton: {

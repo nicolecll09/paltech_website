@@ -9,7 +9,7 @@ type VideoSlide = {
 };
 
 const slides: VideoSlide[] = [
-  { id: 1, src: "/videos/hero.gif" },
+  { id: 1, src: "/videos/hero.mp4" },
 
 ];
 
