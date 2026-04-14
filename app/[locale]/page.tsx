@@ -14,7 +14,6 @@ export default function HomePage() {
       <Benefits />
       <References />
       <LogosFooter />
-
       <Footer />
     </main>
   );
