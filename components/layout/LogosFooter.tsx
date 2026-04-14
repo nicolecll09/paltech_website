@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import Container from "@/components/ui/Container";
+import { useTranslations } from "next-intl";
 
 type LogoItem = {
   id: number;
@@ -21,9 +22,10 @@ const logos: LogoItem[] = [
   { id: 8, src: "/images/logos/projects/8.jpg", alt: "Partner logo 8" },
 ];
 export default function LogosFooter() {
-  const [index, setIndex] = useState(0);
 
-  // duplicamos para efecto infinito
+  const t = useTranslations();
+
+  const [index, setIndex] = useState(0);
   const extended = [...logos, ...logos];
 
   useEffect(() => {
@@ -40,7 +42,7 @@ export default function LogosFooter() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-8">
             <p className="text-4xl font-semibold uppercase tracking-[0.22em] text-[#506c35]">
-              Supported by
+              {t("Supported")}
             </p>
 
           </div>

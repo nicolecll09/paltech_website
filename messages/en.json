@@ -1,0 +1,755 @@
+{
+    "Navbar": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "faq": "FAQ",
+      "contact": "Contact",
+  
+      "product": "Product",
+      "benefits": "Benefits",
+      "references": "References",
+  
+      "history": "History",
+      "team": "Team",
+      "joinUs": "Join Us",
+  
+      "nuga": "NUGA",
+      "neobot": "NeoBot",
+      "potatoControl": "Durchwuchskartoffeln Control",
+      "biobots": "BioBots",
+      "arbot": "Arbot",
+  
+      "form": "Form",
+      "events": "Events"
+    }, 
+
+    "Footer" : {
+        "contact" : "Contact",
+        "impressum" : "Imprint",
+        "dataProtection" : "Data Protection",
+        "privacy" : "Data Privacy", 
+        "rights" : "All rights reserved"
+    }, 
+
+
+    "Hero": {
+        "slide1": {
+        "title": "Going organic has never been easier",
+        "subtitle": "Robots for automated, herbicide-free dock weed control in grassland",
+        "primaryButton": "Our robot",
+        "secondaryButton": "Contact us"
+        },
+        "previousSlide": "Previous slide",
+        "nextSlide": "Next slide",
+        "goToSlide": "Go to slide {number}"
+    }, 
+
+
+    
+      "Product": {
+        "subtitle": "The autonomous grassland robot",
+        "description": "Precision weed control without chemicals, designed for organic grassland and autonomous field operation.",
+        "robotImageAlt": "PRATUM autonomous grassland robot",
+        "supportBanner": "Eligible for BaySL Digital support: up to 40% subsidy on purchase price.",
+        "features": {
+          "multiStageAiDetection": {
+            "title": "Multi-stage AI detection",
+            "text": "Advanced perception for precise weed identification in grassland environments."
+          },
+          "obstacleDetectionStatusDisplay": {
+            "title": "Obstacle detection & status display",
+            "text": "Integrated sensing and visual feedback for safer autonomous operation."
+          },
+          "oscillatingAxleUnevenTerrain": {
+            "title": "Oscillating axle for uneven terrain",
+            "text": "Stable performance across irregular ground and demanding field conditions."
+          },
+          "rtkPositioning": {
+            "title": "RTK positioning",
+            "text": "Centimeter-level positioning accuracy for repeatable field operations."
+          },
+          "swapBatteryLongMissions": {
+            "title": "Swap battery for long missions",
+            "text": "Designed for extended deployments with up to 10–12 hours of operation."
+          },
+          "rearWheelSteering": {
+            "title": "Rear-wheel steering",
+            "text": "High maneuverability for tighter turns and efficient navigation."
+          }
+        },
+        "highlights": {
+          "builtFromRealFieldPractice": {
+            "title": "Built from real field practice",
+            "description": "Developed from practical experience in organic grassland operations and shaped by real agricultural needs."
+          },
+          "madeForOrganicFarming": {
+            "title": "Made for organic farming",
+            "description": "Mechanical weed control without chemicals, focused on precision, sustainability, and soil-friendly operation."
+          },
+          "autonomousEfficient": {
+            "title": "Autonomous & efficient",
+            "description": "Detects, plans, and operates autonomously to reduce manual workload and improve productivity."
+          },
+          "integratedReseeding": {
+            "title": "Integrated reseeding",
+            "description": "After weed removal, grass seed can be applied to help restore and close the grass cover."
+          }
+        }
+      }, 
+      
+      "Benefits": {
+        "title": "Benefits",
+        "items": {
+          "builtFromRealFieldPractice": {
+            "title": "Built from real field practice",
+            "description": "Developed from practical experience in organic grassland operations and shaped by real agricultural needs."
+          },
+          "madeForOrganicFarming": {
+            "title": "Made for organic farming",
+            "description": "Mechanical weed control without chemicals, focused on precision, sustainability, and soil-friendly operation."
+          },
+          "autonomousEfficient": {
+            "title": "Autonomous & efficient",
+            "description": "Detects, plans, and operates autonomously to reduce manual workload and improve productivity."
+          },
+          "integratedReseeding": {
+            "title": "Integrated reseeding",
+            "description": "After weed removal, grass seed can be applied to help restore and close the grass cover."
+          }
+        }
+      }, 
+
+      
+      "References": {
+        "title": "Trusted by our customers",
+        "description": "Feedback from users and partners who have worked with our technology in practical field environments.",
+        "previousTestimonial": "Previous testimonial",
+        "nextTestimonial": "Next testimonial",
+        "goToTestimonial": "Go to testimonial {number}",
+        "items": {
+          "1": {
+            "role": "Organic farmer",
+            "quote": "The robots do a very good job. I am very satisfied and have already booked them again for the next season."
+          },
+          "2": {
+            "role": "Organic farmer, Spitalhof",
+            "quote": "The results speak for themselves. I’m pleased that the robots take over the tedious task of removing dock."
+          }
+        }
+      }, 
+
+    "Supported" : "Supported by",
+
+      
+    "History": {
+        "eyebrow": "History",
+        "title": "Built from real agricultural practice",
+        "paragraph1": "The origin of Paltech lies in a family-run dairy farm. In 2016, the grandparents converted the farm to organic agriculture—an important step toward greater sustainability and responsibility toward nature and animals. However, the transition also brought new challenges: problematic weeds such as dock and ragwort began to spread increasingly. Controlling them is particularly demanding in organic farming and requires a great deal of manual labor.",
+        "paragraph2": {
+          "part1": "Despite all the advances in agriculture, this specific task is still largely done by hand. Dock and ragwort are removed manually—labor-intensive, time-consuming, and physically demanding. It quickly became clear: a better solution was needed.",
+          "part2": "Since 2021, Felix, Florian, and their stepfather Jorge have been working together on this vision: the full automation of weed control in organic grassland. What began as a family problem is now the driving force behind Paltech—with the goal of sustainably relieving farmers and making agriculture more efficient."
+        },
+        "previousImage": "Previous image",
+        "nextImage": "Next image",
+        "goToImage": "Go to history image {number}",
+        "slides": {
+          "1": {
+            "alt": "Paltech early field development"
+          },
+          "2": {
+            "alt": "Paltech prototype in grassland"
+          },
+          "3": {
+            "alt": "Paltech testing in real conditions"
+          }
+        }
+      }, 
+      
+    "Team": {
+      "eyebrow": "Team",
+      "title": "Developed by an interdisciplinary team",
+      "description1": "We are an international team with a strong Latin American influence, working passionately on forward-looking solutions for agriculture.",
+      "description2": "Our mix of software developers, electrical engineers, and mechanical engineers combines technical expertise with a spirit of innovation, creating a unique dynamic.",
+      "imageAlt": "Paltech Team"
+    },
+
+  "Nuga": {
+  "title": "European Innovation Partnership (EIP-Agri)",
+  "description1": "The European Innovation Partnership for Agricultural Productivity and Sustainability (EIP-Agri) is an EU funding instrument. Its goal is to strengthen innovation in the agricultural sector. It supports practice-oriented projects that make agriculture and food production more productive while also more sustainable.",
+  "description2": "Our NUGA project is financially supported under EIP-Agri by the European Union and the Free State of Bavaria and has a duration of 24 months.",
+
+  "hero": {
+    "imageAlt": "NUGA",
+    "downloadButton": "Download explanatory panel (PDF)"
+  },
+  "cover": {
+    "slides": [
+      {
+        "title": "NUGA",
+        "subtitle": "EIP-Agri"
+      },
+      {
+        "title": "NUGA",
+        "subtitle": "EIP-Agri"
+      }
+    ]
+  },
+  "ziel": {
+    "title": "Project Goal",
+    "description": "The goal of the NUGA project is the development of an innovative tractor-mounted implement that enables mechanical—and therefore herbicide-free—control of dock and ragwort in grassland, thereby improving feed quality."
+  },
+  "problem": {
+    "title": "Why dock and ragwort are a problem",
+    "description": "Dock is considered a space competitor: it displaces valuable forage plants, develops deep taproots, and produces a large number of long-lasting seeds. Mechanical removal is difficult.",
+    "description2": "Ragwort is toxic to animals, especially cattle and horses. Its toxicity remains even in hay.",
+    "description3": "In organic farming, chemical agents are not allowed—leaving manual removal as the only option. This takes about one minute per plant—an immense time effort that is hardly manageable in times of labor shortages.",
+    "imageAlt": "Dock and ragwort in grassland"
+  },
+  "results": {
+    "title": "Current Results",
+    "items": [
+      "A digital twin of the implement has been created.",
+      "Various methods for optimizing deployment planning have been tested.",
+      "The risk analysis has been successfully completed.",
+      "The physical implementation of the implement is now beginning—a crucial step toward practical application."
+    ],
+    "images": [
+      {
+        "alt": "Digital twin of the implement"
+      },
+      {
+        "alt": "Optimization of deployment planning"
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "More Information",
+    "title": "Download explanatory panel",
+    "description": "Download the project documentation to learn more about funding, objectives, and implementation of NUGA.",
+    "button": "Download PDF"
+  },
+  "logos": [
+    { "alt": "Partner logo 1" },
+    { "alt": "Partner logo 2" },
+    { "alt": "Partner logo 3" },
+    { "alt": "Partner logo 4" },
+    { "alt": "Partner logo 5" },
+    { "alt": "Partner logo 6" },
+    { "alt": "Partner logo 7" },
+    { "alt": "Partner logo 8" }
+  ]
+  },
+
+  "NeoBot": {
+  "cover": {
+    "slides": [
+      {
+        "title": "NeoBot",
+        "subtitle": "EIP-Agri"
+      },
+      {
+        "title": "NeoBot",
+        "subtitle": "EIP-Agri"
+      }
+    ]
+  },
+  "hero": {
+    "title": "NeoBot – (Semi-)autonomous control of invasive plants",
+    "description": "Development of an all-terrain robot for the mechanical, herbicide-free control of invasive plant species – safe, practical, and environmentally friendly.",
+    "imageAlt": "NeoBot",
+    "downloadButton": "Download project description (PDF)"
+  },
+  "funding": {
+    "eyebrow": "Funding Notice",
+    "description": "A project funded under the CAP Strategic Plan Germany 2023–2027 in the Free State of Bavaria. Supported by the European Innovation Partnership (EIP-Agri)."
+  },
+  "projectGoal": {
+    "eyebrow": "01",
+    "title": "Project Goal",
+    "description": "Invasive plant species such as giant hogweed pose an increasing challenge for agriculture, the environment, and public safety. They displace native species, are difficult to access, and can cause health damage upon contact.",
+    "description2": "The goal of the NeoBot project is to develop an all-terrain robot that removes these plants mechanically and without the use of herbicides. The focus is on a practical, safe, and environmentally friendly solution.",
+    "imageAlt": "Invasive plant species in terrain",
+    "captionLabel": "Figure:",
+    "caption": "Giant hogweed can cause severe burns",
+    "source": "Source: Stern"
+  },
+  "situation": {
+    "eyebrow": "02",
+    "title": "Initial Situation",
+    "description": "The control of invasive neophytes is currently carried out mainly:",
+    "items": [
+      "Manually (labor-intensive and risky)",
+      "Chemically (environmentally critical)",
+      "Or with equipment that is difficult to deploy"
+    ],
+    "description2": "Especially in hard-to-reach terrain – e.g., slopes, forest edges, or near water bodies – existing solutions are only of limited use.",
+    "highlight": "This is where the NeoBot project comes in."
+  },
+  "solution": {
+    "eyebrow": "03",
+    "title": "Approach",
+    "description": "Within the project, an innovative system is being developed that combines the following features:",
+    "items": [
+      "Operation in rough terrain",
+      "Mechanical, herbicide-free control",
+      "Combination of manual and semi-autonomous control",
+      "Intelligent detection of relevant plants"
+    ],
+    "description2": "The system is modular and can potentially be adapted for additional applications in the future.",
+    "imageAlt": "Protective clothing for controlling giant hogweed",
+    "captionLabel": "Figure 2:",
+    "caption": "When removing giant hogweed, wearing protective clothing is mandatory. Otherwise, skin burns may occur.",
+    "source": "Source: Merkur"
+  },
+  "results": {
+    "eyebrow": "04",
+    "title": "Expected Results",
+    "description": "The project aims to develop a functional demonstrator that can be used under real conditions.",
+    "description2": "In particular, the following outcomes are expected:",
+    "items": [
+      "A significant reduction in manual labor effort",
+      "Improved occupational safety",
+      "An environmentally friendly alternative to chemical methods",
+      "New approaches for applying modern technologies in landscape management"
+    ],
+    "description3": "In the long term, the solution aims to promote biodiversity and open new perspectives for the practical use of automated systems."
+  },
+  "activities": {
+    "eyebrow": "05",
+    "title": "Project Activities",
+    "description": "The project includes several coordinated work steps:",
+    "items": [
+      "Development and integration of key system components",
+      "Adaptation to different operating conditions",
+      "Establishment of safe and reliable operation",
+      "Conducting laboratory and field tests",
+      "Accompanying communication and knowledge transfer"
+    ],
+    "description2": "A special focus is placed on practical testing under real conditions."
+  },
+  "milestones": {
+    "eyebrow": "06",
+    "title": "Milestones",
+    "description": "These steps form the foundation for potential future real-world application.",
+    "cards": [
+      {
+        "year": "2026",
+        "title": "Demonstrator under controlled conditions"
+      },
+      {
+        "year": "2027",
+        "title": "Fully operational system in real terrain"
+      }
+    ]
+  }
+  },
+
+  "Durchwuchskartoffeln": {
+    "cover": {
+      "slides": [
+        {
+          "title": "Control of durchwuchskartoffeln",
+          "subtitle": "EIP-Agri"
+        },
+        {
+          "title": "Control of durchwuchskartoffeln",
+          "subtitle": "EIP-Agri"
+        }
+      ]
+    },
+    "hero": {
+      "title": "Control of durchwuchskartoffeln",
+      "description": "Development of a robotic system for the targeted detection and mechanical removal of durchwuchskartoffeln – without the use of chemical plant protection products.",
+      "imageAlt": "Control of durchwuchskartoffeln",
+      "downloadButton": "Download project description (PDF)"
+    },
+    "funding": {
+      "eyebrow": "Funding Notice",
+      "description": "A project funded under the CAP Strategic Plan Germany 2023–2027 in the Free State of Bavaria. Supported by the European Innovation Partnership (EIP-Agri)."
+    },
+    "projectGoal": {
+      "eyebrow": "01",
+      "title": "Project Goal",
+      "description": "Durchwuchskartoffeln appear as unwanted plants in subsequent crops and represent a growing challenge in arable farming. They compete with crops for resources and can promote the spread of diseases and pests.",
+      "description2": "The aim of the project is to develop a robotic system that detects these plants in a targeted way and removes them mechanically – without the use of chemical plant protection products.",
+      "imageAlt": "Durchwuchskartoffeln in an agricultural context",
+      "captionLabel": "Figure 3:",
+      "caption": "Durchwuchskartoffeln in a maize crop",
+      "source": "Source: LWK Niedersachsen"
+    },
+    "situation": {
+      "eyebrow": "02",
+      "title": "Initial Situation",
+      "description": "After potato harvesting, tubers often remain in the soil and sprout again in the following years. These so-called volunteer potatoes:",
+      "items": [
+        "Reduce yields in subsequent crops",
+        "Complicate crop rotations",
+        "Increase phytosanitary risks",
+        "Are difficult to fully control"
+      ],
+      "description2": "Existing methods often focus on above-ground plant parts and insufficiently reach the tubers located in the soil."
+    },
+    "solution": {
+      "eyebrow": "03",
+      "title": "Approach",
+      "description": "Within the project, an innovative system is being developed that is specifically designed for sustainable control in the soil:",
+      "items": [
+        "AI-based detection of individual plants",
+        "Precise positioning of a mechanical tool",
+        "Targeted intervention in the soil to damage the tubers",
+        "Combination of automated and supervised control"
+      ],
+      "description2": "The focus is on interrupting the growth cycle as completely as possible by treating the mother tubers in the soil."
+    },
+    "results": {
+      "eyebrow": "04",
+      "title": "Expected Results",
+      "description": "The goal is to develop a practical system that can be used under real conditions.",
+      "description2": "In particular, the following outcomes are expected:",
+      "items": [
+        "A significant reduction in the use of herbicides",
+        "More effective control through intervention in the soil",
+        "Improved field hygiene and plant health",
+        "Relief for agricultural operations"
+      ],
+      "description3": "The system is intended to be usable in both conventional and organic farming and to open new possibilities for sustainable production systems."
+    },
+    "activities": {
+      "eyebrow": "05",
+      "title": "Project Activities",
+      "description": "The project includes several key development steps:",
+      "items": [
+        "Development of an AI system for plant detection",
+        "Development of mechanical tools for tuber treatment",
+        "Design of an all-terrain carrier vehicle",
+        "Integration of control and safety functions",
+        "Execution of extensive field tests"
+      ],
+      "description2": "A special focus is placed on the combination of digitalization and mechanical processing."
+    },
+    "milestones": {
+      "eyebrow": "06",
+      "title": "Milestones",
+      "cards": [
+        {
+          "title": "Development and integration of core technology"
+        },
+        {
+          "title": "Testing under real-world conditions"
+        },
+        {
+          "title": "Demonstration of the system in agricultural operation"
+        }
+      ]
+    }
+  },
+  
+  "BioBot": {
+  "cover": {
+    "slides": [
+      {
+        "title": "BioBot",
+        "subtitle": ""
+      },
+      {
+        "title": "BioBot",
+        "subtitle": ""
+      }
+    ]
+  },
+  "hero": {
+    "title": "Autonomous robotics to promote biodiversity in roadside green areas",
+    "description": "Development of an autonomous robotic system for the ecological enhancement and efficient maintenance of roadside areas.",
+    "imageAlt": "Roadside greenery and autonomous maintenance"
+  },
+  "funding": {
+    "eyebrow": "Funding Notice",
+    "description": "Funded under the Digital GreenTech initiative – environmental technology meets robotics – by the Federal Ministry for Research, Technology and Space (BMFTR)."
+  },
+  "projectGoal": {
+    "eyebrow": "01",
+    "title": "Project Goal",
+    "description": "Roadside areas offer great, yet largely untapped potential for nature conservation and climate protection. The goal of the project is to develop an autonomous robotic system that enhances these areas ecologically while maintaining them efficiently.",
+    "description2": "The robot is intended to:",
+    "items": [
+      "Navigate roadside areas autonomously",
+      "Mow selectively and in an insect-friendly manner",
+      "Specifically suppress invasive plant species",
+      "Actively introduce native plant species"
+    ],
+    "description3": "In this way, roadside areas are actively developed into ecological corridors."
+  },
+  "situation": {
+    "eyebrow": "02",
+    "title": "Initial Situation",
+    "description": "Roadside areas are currently maintained mostly using conventional methods – often through mulching or simple mowing. This leads to several problems:",
+    "items": [
+      "Promotion of competitive plant species due to nutrient accumulation",
+      "Displacement of native species",
+      "Strong spread of invasive plants (e.g., goldenrod, knotweed)",
+      "High damage to insects due to unsuitable mowing techniques"
+    ],
+    "description2": "At the same time, large areas remain ecologically underutilized, even though they could play an important role as connectivity corridors for biodiversity."
+  },
+      "solution": {
+        "eyebrow": "03",
+        "title": "Approach",
+        "description": "The project follows an integrated, technology-based approach:",
+        "items": [
+          "Autonomous navigation along roadside areas",
+          "AI-based plant and environment detection",
+          "Selective, section-based mowing instead of full-area processing",
+          "Targeted control of invasive species",
+          "Active reseeding of native plant species"
+        ],
+        "description2": "The robot combines maintenance, monitoring, and ecological enhancement in a single system.",
+        "imageAlt": "Roadside greenery and autonomous maintenance"
+      },
+      "logos": [
+        { "alt": "Partner logo 1" },
+        { "alt": "Partner logo 2" },
+        { "alt": "Partner logo 3" },
+        { "alt": "Partner logo 4" }
+      ]
+    },
+
+
+
+
+"Arbot": {
+  "cover": {
+    "slides": [
+      {
+        "title": "Arbot",
+        "subtitle": "Arbot"
+      },
+      {
+        "title": "Arbot",
+        "subtitle": "Arbot"
+      }
+    ]
+  },
+  "hero": {
+    "title": "Autonomous robotics for forest reforestation",
+    "description": ""
+  },
+  "funding": {
+    "eyebrow": "Funding Notice",
+    "description": "Funded under the KMU-innovativ – Bioeconomy initiative by the Federal Ministry for Research, Technology and Space."
+  },
+  "projectGoal": {
+    "eyebrow": "01",
+    "title": "Project Goal",
+    "description": "The goal of the Arbot project is to develop an autonomous planting robot that supports reforestation and the transition toward climate-resilient mixed forests.",
+    "description2": "The robot is intended to:",
+    "items": [
+      "Automatically plant seedlings",
+      "Navigate autonomously in forest environments",
+      "Operate under real-world conditions",
+      "Significantly reduce labor effort in forestry"
+    ],
+    "description3": "This addresses a key bottleneck in reforestation: the acute labor shortage."
+  },
+  "situation": {
+    "eyebrow": "02",
+    "title": "Initial Situation",
+    "description": "Forests are facing major challenges:",
+    "items": [
+      "Climate change-related damage (drought, bark beetles)",
+      "Increasing need for reforestation",
+      "Large-scale area requirements (hundreds of thousands of hectares)",
+      "At the same time, declining availability of labor"
+    ],
+    "description2": "Manual planting is time-consuming, physically demanding, and difficult to scale."
+  },
+  "solution": {
+    "eyebrow": "03",
+    "title": "Approach",
+    "description": "Arbot develops a highly to fully automated forestry robot that combines the following capabilities:",
+    "items": [
+      "Autonomous navigation in forests (even without GPS)",
+      "Detection of suitable planting positions",
+      "Precise planting of seedlings",
+      "Robust mobility in unstructured terrain"
+    ],
+    "description2": "Technologically, the system is based, among other things, on:",
+    "techItems": [
+      "SLAM methods for localization",
+      "AI-based perception",
+      "Modular robotics platform"
+    ],
+    "description3": "The goal is a functional prototype (TRL 4–5) that will be tested in real forest environments."
+  }
+},
+  "FAQ": {
+      "eyebrow": "FAQ",
+      "title": "Frequently asked questions",
+      "description": "Answers to common questions about the product, its operation, and how to get in touch with the team.",
+      "items": {
+        "1": {
+          "question": "Which weeds are targeted?",
+          "answer": "Currently, the focus is on dock (Ampfer). The next steps include autumn crocus (Herbstzeitlose) and ragwort (Kreuzkraut)."
+        },
+        "2": {
+          "question": "How are the weeds controlled?",
+          "answer": "The robot automatically detects the weeds, precisely positions itself above them, and selectively mills out the root. During this process, the regrowth buds are crushed in such a way that regrowth is no longer possible. Afterwards, the resulting gap is immediately reseeded with grass. The entire process is 100% mechanical and completely avoids the use of herbicides."
+        },
+        "3": {
+          "question": "How long is the robot’s battery life?",
+          "answer": "Currently, the battery life is approximately 10 to 12 hours, depending on the operating conditions."
+        },
+        "4": {
+          "question": "What is the BaySL Digital funding program about?",
+          "answer": "The Paltech robot is listed on the BaySL Digital positive list, which allows the purchase to be subsidized by up to 40%. The application process is simple and can be completed in just a few clicks via the iBALIS portal."
+        },
+        "5": {
+          "question": "Can the robot be seen on-site?",
+          "answer": "Yes, we regularly conduct live demonstrations. You can find the upcoming dates here."
+        }
+      },
+      "more1" : "Your question is not here?",
+      "more2" : "Then write to us - we will help you further!"
+    }, 
+
+
+    "ContactForm": {
+      "pageNameFallback": "Contact Form",
+      "header": {
+        "eyebrow": "Contact",
+        "title": "Contact / Inquiry Form",
+        "description": "Fill out the form below and we will get back to you as soon as possible."
+      },
+      "requestType": {
+        "title": "Type of Request",
+        "description": "Select the topic that best matches your request.",
+        "options": {
+          "purchase_inquiry": "Purchase Inquiry",
+          "demo_registration": "Demo Registration",
+          "newsletter": "Subscribe to Newsletter",
+          "other_request": "Other Request"
+        }
+      },
+      "contactDetails": {
+        "title": "Contact Details"
+      },
+      "purchaseDetails": {
+        "title": "Purchase Inquiry Details"
+      },
+      "newsletter": {
+        "title": "Newsletter Subscription",
+        "checkbox": "I would like to receive the newsletter (up to 2 emails per year)."
+      },
+      "messageSection": {
+        "title": "Message"
+      },
+      "privacy": {
+        "text": "I have read the privacy policy and agree that my data may be stored and processed for the purpose of handling my request."
+      },
+      "fields": {
+        "name": {
+          "label": "Name",
+          "placeholder": "Your name"
+        },
+        "email": {
+          "label": "Email Address",
+          "placeholder": "you@example.com"
+        },
+        "phone": {
+          "label": "Phone Number",
+          "placeholder": "+49 ..."
+        },
+        "company": {
+          "label": "Company / Farm",
+          "placeholder": "Company / Farm"
+        },
+        "address": {
+          "label": "Address",
+          "placeholder": "Street, city, postal code"
+        },
+        "farmSize": {
+          "label": "Farm Size",
+          "placeholder": "e.g. 50 ha"
+        },
+        "anbauverband": {
+          "label": "Farming Association",
+          "placeholder": "Select one"
+        },
+        "weeds": {
+          "label": "Weeds causing problems"
+        },
+        "otherWeeds": {
+          "label": "Which weeds?",
+          "placeholder": "Please specify"
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "Write your message here..."
+        }
+      },
+      "anbauverbandOptions": {
+        "Bioland": "Bioland",
+        "Naturland": "Naturland",
+        "Biokreis": "Biokreis",
+        "Demeter": "Demeter",
+        "Sonstiger": "Sonstiger",
+        "Keiner": "Keiner"
+      },
+      "weeds": {
+        "Ampfer": "Ampfer",
+        "Wasserkreuzkraut": "Wasserkreuzkraut",
+        "Jakobskreuzkraut": "Jakobskreuzkraut",
+        "Herbstzeitlose": "Herbstzeitlose",
+        "Other": "Other"
+      },
+      "errors": {
+        "nameRequired": "Name is required.",
+        "emailRequired": "Email is required.",
+        "emailInvalid": "Please enter a valid email address.",
+        "requestTypeRequired": "Please select a request type.",
+        "addressRequired": "Address is required for a purchase inquiry.",
+        "anbauverbandRequired": "Please select a farming association for a purchase inquiry.",
+        "otherWeedsRequired": "Please specify the other weeds.",
+        "messageRequired": "Message is required for other requests.",
+        "privacyRequired": "You must accept the privacy policy to continue."
+      },
+      "messages": {
+        "submitSuccess": "Your request has been sent successfully.",
+        "submitErrorDefault": "There was an error sending the form.",
+        "submitErrorUnexpected": "There was an unexpected error sending the form."
+      },
+      "buttons": {
+        "sending": "Sending...",
+        "submit": "Send request",
+        "reset": "Reset"
+      }
+    },
+      
+      
+    "Events": {
+      "eyebrow": "Events",
+      "description": "Our demonstration dates are deliberately kept flexible. The exact location and time will be shared with you in the week beforehand — depending on weather conditions and crop growth, changes may still occur.",
+      "items": [
+        {
+          "date": "Calendar Week 20",
+          "title": "Feldtag Ampferroboter",
+          "location": "Kempten - 87437",
+          "description": ""
+        },
+        {
+          "date": "Calendar Week 24",
+          "title": "Feldtag Ampferroboter",
+          "location": "Kempten - 87437",
+          "description": ""
+        },
+        {
+          "date": "ca. Calendar Week 36 to 40",
+          "title": "Feldtag Ampferroboter",
+          "location": "Salzburg",
+          "description": ""
+        }
+      ]
+    }
+    
+      
+  }

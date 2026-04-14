@@ -1,9 +1,12 @@
 "use client";
 
 import { motion } from "motion/react";
+import { useTranslations } from "next-intl";
 import Container from "@/components/ui/Container";
 
 export default function Team() {
+  const t = useTranslations("Team");
+
   return (
     <section
       id="team"
@@ -21,7 +24,7 @@ export default function Team() {
             <div className="overflow-hidden rounded-[30px] border border-[#06131f]/8 bg-[#eef2f1] shadow-[0_24px_70px_rgba(6,19,31,0.08)]">
               <img
                 src="/images/about/team.jpg"
-                alt="Paltech team"
+                alt={t("imageAlt")}
                 className="h-full w-full object-cover"
               />
             </div>
@@ -35,22 +38,19 @@ export default function Team() {
             className="max-w-2xl"
           >
             <p className="text-xl font-semibold uppercase tracking-[0.24em] text-[#506c35]">
-              Team
+              {t("eyebrow")}
             </p>
 
             <h2 className="mt-4 font-[var(--font-heading)] text-4xl font-semibold tracking-[-0.03em] text-[#06131f] md:text-6xl">
-              Built by a multidisciplinary team
+              {t("title")}
             </h2>
 
-
-
             <p className="mt-6 text-base leading-7 text-[#06131f]/72 md:text-lg md:leading-8">
-            We are an international team with a strong Latin American influence, passionately working on forward-looking solutions for agriculture.
-            Our mix of software developers, electrical engineers, and mechanical engineers combines technical expertise with a spirit of innovation, creating a unique dynamic.
-
+              {t("description1")}
             </p>
-
-      
+            <p className="mt-6 text-base leading-7 text-[#06131f]/72 md:text-lg md:leading-8">
+              {t("description2")}
+            </p>
           </motion.div>
         </div>
       </Container>

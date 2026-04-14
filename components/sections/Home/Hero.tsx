@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import Container from "@/components/ui/Container";
+import { useTranslations } from "next-intl";
 
 type Slide = {
   id: number;
@@ -19,49 +20,51 @@ type Slide = {
   };
 };
 
-const slides: Slide[] = [
-  {
-    id: 1,
-    videoSrc: "/videos/hero.mp4",
-    title: "Going organic has never been easier",
-    subtitle:
-      "Robots for automated, herbicide-free dock weed control in grassland",
-    primaryButton: {
-      label: "Our robot",
-      href: "#robot",
-    },
-    secondaryButton: {
-      label: "Contact us",
-      href: "#footer",
-    },
-  }
-  // {
-  //   id: 2,
-  //   videoSrc: "/videos/hero.mp4",
-  //   title: "Scalable technology for persistent monitoring",
-  //   subtitle:
-  //     "A modern sensing approach that enables lower deployment cost, resilient architectures, and reliable performance across complex maritime scenarios.",
-  //   primaryButton: {
-  //     label: "See applications",
-  //     href: "#applications",
-  //   },
-  //   secondaryButton: {
-  //     label: "Learn more",
-  //     href: "#about",
-  //   },
-  // },
-];
-
 export default function Hero() {
+  const t = useTranslations("Hero");
   const [current, setCurrent] = useState(0);
 
+  const slides: Slide[] = [
+    {
+      id: 1,
+      videoSrc: "/videos/hero.mp4",
+      title: t("slide1.title"),
+      subtitle: t("slide1.subtitle"),
+      primaryButton: {
+        label: t("slide1.primaryButton"),
+        href: "#product"
+      },
+      secondaryButton: {
+        label: t("slide1.secondaryButton"),
+        href: "#footer"
+      }
+    }
+    // Si luego quieres más slides:
+    // {
+    //   id: 2,
+    //   videoSrc: "/videos/hero-2.mp4",
+    //   title: t("slide2.title"),
+    //   subtitle: t("slide2.subtitle"),
+    //   primaryButton: {
+    //     label: t("slide2.primaryButton"),
+    //     href: "#applications"
+    //   },
+    //   secondaryButton: {
+    //     label: t("slide2.secondaryButton"),
+    //     href: "#about"
+    //   }
+    // }
+  ];
+
   useEffect(() => {
+    if (slides.length <= 1) return;
+
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
     }, 4000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [slides.length]);
 
   const goToSlide = (index: number) => {
     setCurrent(index);
@@ -80,7 +83,6 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-black">
       <div className="relative min-h-screen w-full">
-        {/* Background videos */}
         <div className="absolute inset-0">
           <AnimatePresence mode="wait">
             <motion.video
@@ -99,13 +101,9 @@ export default function Hero() {
           </AnimatePresence>
         </div>
 
-        {/* Dark overlay */}
         <div className="absolute inset-0 z-[1] bg-black/45" />
-
-        {/* Extra gradient for better readability */}
         <div className="absolute inset-0 z-[2] bg-gradient-to-b from-black/40 via-black/25 to-black/55" />
 
-        {/* Content */}
         <div className="relative z-10 flex min-h-screen items-center justify-center text-center">
           <Container>
             <div className="mx-auto max-w-5xl">
@@ -117,15 +115,6 @@ export default function Hero() {
                   exit={{ opacity: 0, y: -18, filter: "blur(6px)" }}
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
-                  <motion.p
-                    initial={{ opacity: 0, y: 16 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.7, delay: 0.1 }}
-                    className="mb-6 text-sm font-medium uppercase tracking-[0.25em] text-white/70 md:text-base"
-                  >
-                    {/* Advanced Maritime Monitoring */}
-                  </motion.p>
-
                   <motion.h1
                     initial={{ opacity: 0, y: 32, filter: "blur(8px)" }}
                     animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
@@ -148,18 +137,20 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 18 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.75, delay: 0.32 }}
-                    className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
+                    className="mt-10 flex flex-col items-center  justify-center gap-4 sm:flex-row"
                   >
                     <a
                       href={activeSlide.primaryButton.href}
                       className="inline-flex min-w-[180px] items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#06131f] transition hover:scale-[1.02] hover:bg-white/90"
                     >
-                      {activeSlide.primaryButton.label}
+                      <div className="text-black">
+                        {activeSlide.primaryButton.label}
+                      </div>
                     </a>
 
                     <a
                       href={activeSlide.secondaryButton.href}
-                      className="inline-flex min-w-[180px] items-center justify-center rounded-full border border-white/30 bg-white/10 px-6 py-3 text-sm font-semibold text-black backdrop-blur-sm transition hover:scale-[1.02] hover:bg-white/15"
+                      className="inline-flex min-w-[180px]  items-center justify-center rounded-full border border-white/30 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm transition hover:scale-[1.02] hover:bg-white/15"
                     >
                       {activeSlide.secondaryButton.label}
                     </a>
@@ -170,48 +161,50 @@ export default function Hero() {
           </Container>
         </div>
 
-        {/* Arrows */}
-        <div className="pointer-events-none absolute inset-x-0 top-1/2 z-20 -translate-y-1/2">
-          <Container>
-            <div className="flex items-center justify-between">
-              <button
-                onClick={goPrev}
-                className="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-black/25 text-white backdrop-blur-md transition hover:bg-black/40"
-                aria-label="Previous slide"
-              >
-                ←
-              </button>
+        {slides.length > 1 && (
+          <>
+            <div className="pointer-events-none absolute inset-x-0 top-1/2 z-20 -translate-y-1/2">
+              <Container>
+                <div className="flex items-center justify-between">
+                  <button
+                    onClick={goPrev}
+                    className="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-black/25 text-white backdrop-blur-md transition hover:bg-black/40"
+                    aria-label={t("previousSlide")}
+                  >
+                    ←
+                  </button>
 
-              <button
-                onClick={goNext}
-                className="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-black/25 text-white backdrop-blur-md transition hover:bg-black/40"
-                aria-label="Next slide"
-              >
-                →
-              </button>
+                  <button
+                    onClick={goNext}
+                    className="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-black/25 text-white backdrop-blur-md transition hover:bg-black/40"
+                    aria-label={t("nextSlide")}
+                  >
+                    →
+                  </button>
+                </div>
+              </Container>
             </div>
-          </Container>
-        </div>
 
-        {/* Dots */}
-        <div className="absolute bottom-8 left-0 right-0 z-20">
-          <div className="flex items-center justify-center gap-3">
-            {slides.map((slide, index) => {
-              const isActive = index === current;
+            <div className="absolute bottom-8 left-0 right-0 z-20">
+              <div className="flex items-center justify-center gap-3">
+                {slides.map((slide, index) => {
+                  const isActive = index === current;
 
-              return (
-                <button
-                  key={slide.id}
-                  onClick={() => goToSlide(index)}
-                  aria-label={`Go to slide ${index + 1}`}
-                  className={`h-2.5 rounded-full transition-all duration-300 ${
-                    isActive ? "w-10 bg-white" : "w-2.5 bg-white/40 hover:bg-white/70"
-                  }`}
-                />
-              );
-            })}
-          </div>
-        </div>
+                  return (
+                    <button
+                      key={slide.id}
+                      onClick={() => goToSlide(index)}
+                      aria-label={t("goToSlide", {number: index + 1})}
+                      className={`h-2.5 rounded-full transition-all duration-300 ${
+                        isActive ? "w-10 bg-white" : "w-2.5 bg-white/40 hover:bg-white/70"
+                      }`}
+                    />
+                  );
+                })}
+              </div>
+            </div>
+          </>
+        )}
       </div>
     </section>
   );

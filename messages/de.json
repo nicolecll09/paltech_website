@@ -1,0 +1,761 @@
+{
+
+  "Navbar": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "projects": "Projekte",
+    "faq": "FAQ",
+    "contact": "Kontakt",
+
+    "product": "Produkt",
+    "benefits": "Vorteile",
+    "references": "Referenzen",
+
+    "history": "Geschichte",
+    "team": "Team",
+    "joinUs": "Karriere",
+
+    "nuga": "NUGA",
+    "neobot": "NeoBot",
+    "potatoControl": "Bekämpfung von Durchwuchskartoffeln",
+    "biobots": "BioBots",
+    "arbot": "Arbot",
+
+    "form": "Formular",
+    "events": "Veranstaltungen"
+  }, 
+
+
+  "Footer" : {
+    "contact" : "Kontakt",
+    "impressum" : "Impressum",
+    "dataProtection" : "Datenschutz",
+    "privacy" : "Datenschutzerklaerung",
+    "rights" : "All rights reserved"
+
+  }, 
+
+  "Hero": {
+    "slide1": {
+      "title": "Bio war noch nie so einfach",
+      "subtitle": "Roboter zur automatisierten herbizidfreien Ampferbekämpfung im Grünland",
+      "primaryButton": "Unser Roboter",
+      "secondaryButton": "Kontakt"
+    },
+    "previousSlide": "Vorherige Folie",
+    "nextSlide": "Nächste Folie",
+    "goToSlide": "Gehe zu Folie {number}"
+  }, 
+
+    
+  "Product": {
+    "subtitle": "Der autonome Grünlandroboter",
+    "description": "Präzise Unkrautbekämpfung ohne Chemie, entwickelt für den ökologischen Grünlandbetrieb und den autonomen Feldeinsatz.",
+    "robotImageAlt": "PRATUM autonomer Grünlandroboter",
+    "supportBanner": "Förderfähig über BaySL Digital: bis zu 40 % Zuschuss zum Kaufpreis.",
+    "features": {
+      "multiStageAiDetection": {
+        "title": "Mehrstufige KI-Erkennung",
+        "text": "Fortschrittliche Wahrnehmung für eine präzise Identifikation von Unkräutern im Grünland."
+      },
+      "obstacleDetectionStatusDisplay": {
+        "title": "Hinderniserkennung & Statusanzeige",
+        "text": "Integrierte Sensorik und visuelles Feedback für einen sichereren autonomen Betrieb."
+      },
+      "oscillatingAxleUnevenTerrain": {
+        "title": "Pendelachse für unebenes Gelände",
+        "text": "Stabile Leistung auf unregelmäßigem Untergrund und unter anspruchsvollen Feldbedingungen."
+      },
+      "rtkPositioning": {
+        "title": "RTK-Positionierung",
+        "text": "Zentimetergenaue Positionierung für wiederholbare Feldarbeiten."
+      },
+      "swapBatteryLongMissions": {
+        "title": "Wechselakku für lange Einsätze",
+        "text": "Ausgelegt für längere Einsätze mit bis zu 10–12 Stunden Betriebszeit."
+      },
+      "rearWheelSteering": {
+        "title": "Hinterachslenkung",
+        "text": "Hohe Manövrierfähigkeit für engere Kurven und effiziente Navigation."
+      }
+    },
+    "highlights": {
+      "builtFromRealFieldPractice": {
+        "title": "Aus der Praxis entwickelt",
+        "description": "Entstanden aus praktischer Erfahrung im ökologischen Grünlandbetrieb und geprägt von realen Anforderungen der Landwirtschaft."
+      },
+      "madeForOrganicFarming": {
+        "title": "Für den Ökolandbau gemacht",
+        "description": "Mechanische Unkrautbekämpfung ohne Chemie, mit Fokus auf Präzision, Nachhaltigkeit und bodenschonendes Arbeiten."
+      },
+      "autonomousEfficient": {
+        "title": "Autonom & effizient",
+        "description": "Erkennt, plant und arbeitet autonom, um manuelle Arbeit zu reduzieren und die Produktivität zu steigern."
+      },
+      "integratedReseeding": {
+        "title": "Integrierte Nachsaat",
+        "description": "Nach der Unkrautentfernung kann Grassaat ausgebracht werden, um die Grasnarbe wieder zu schließen."
+      }
+    }
+  }, 
+      
+    "Benefits": {
+      "title": "Vorteile",
+      "items": {
+        "builtFromRealFieldPractice": {
+          "title": "Aus der Praxis entwickelt",
+          "description": "Im allgäuer Familienbetrieb nach der Umstellung auf Bio entstanden."
+        },
+        "madeForOrganicFarming": {
+          "title": "Für Bio gemacht",
+          "description": "100 % ohne Chemie: Mechanisch, präzise und nachhaltig"
+        },
+        "autonomousEfficient": {
+          "title": "Autonom & effizient",
+          "description": "Erkennt, plant und arbeitet selbstständig – du sparst Zeit und Arbeitskraft."
+        },
+        "integratedReseeding": {
+          "title": "Integrierte Nachsaat",
+          "description": "Nach der Bekämpfung wird Grassamen zur Schließung der Grasnarbe ausgebracht."
+        }
+      }
+    }, 
+
+    
+    "References": {
+      "title": "Geschätzt von unseren Kunden",
+      "description": "Rückmeldungen von Anwendern und Partnern, die mit unserer Technologie unter realen Einsatzbedingungen gearbeitet haben.",
+      "previousTestimonial": "Vorherige Referenz",
+      "nextTestimonial": "Nächste Referenz",
+      "goToTestimonial": "Gehe zu Referenz {number}",
+      "items": {
+        "1": {
+          "role": "Landwirt",
+          "quote": "Die Roboter machen eine sehr gute Arbeit. Ich bin sehr zufrieden und habe sie für die nächste Saison bereits wieder gebucht."
+        },
+        "2": {
+          "role": "Landwirt, Spitalhof",
+          "quote": "Die Ergebnisse liegen auf der Hand. Es freut mich, dass die Roboter die lästige Arbeit der Ampferbekämpfung übernehmen."
+        }
+      }
+    }, 
+
+    "Supported" : "Unterstützt durch",
+    
+    "History": {
+      "eyebrow": "Geschichte",
+      "title": "Entstanden aus echter landwirtschaftlicher Praxis",
+      "paragraph1": "Der Ursprung von Paltech liegt auf einem familiengeführten Milchviehbetrieb. Im Jahr 2016 stellten die Großeltern den Hof auf ökologische Landwirtschaft um – ein wichtiger Schritt hin zu mehr Nachhaltigkeit und Verantwortung gegenüber Natur und Tier. Mit der Umstellung kamen jedoch auch neue Herausforderungen: Problemunkräuter wie Ampfer und Kreuzkraut breiteten sich zunehmend aus. Deren Bekämpfung ist im Bio-Betrieb besonders aufwendig und erfordert viel Handarbeit.",
+      "paragraph2": {
+        "part1": "Was dabei besonders auffiel: Trotz aller Fortschritte in der Landwirtschaft wird genau diese Arbeit noch immer größtenteils händisch erledigt. Ampfer und Kreuzkraut werden manuell entfernt – arbeitsintensiv, zeitaufwendig und körperlich belastend. Schnell wurde klar: Es braucht eine bessere Lösung.",
+        "part2": "Seit 2021 arbeiten Felix, Florian und ihr Stiefvater Jorge gemeinsam an dieser Vision: der vollständigen Automatisierung der Unkrautbekämpfung im ökologischen Grünland. Was als familiäres Problem begann, ist heute die treibende Kraft hinter Paltech – mit dem Ziel, Landwirte nachhaltig zu entlasten und die Landwirtschaft effizienter zu gestalten."
+      },
+      "previousImage": "Vorheriges Bild",
+      "nextImage": "Nächstes Bild",
+      "goToImage": "Gehe zu Geschichtsbild {number}",
+      "slides": {
+        "1": {
+          "alt": "Frühe Feldentwicklung von Paltech"
+        },
+        "2": {
+          "alt": "Paltech-Prototyp im Grünland"
+        },
+        "3": {
+          "alt": "Paltech-Tests unter realen Bedingungen"
+        }
+      }
+    }, 
+
+  
+    "Team": {
+      "eyebrow": "Team",
+      "title": "Entwickelt von einem interdisziplinären Team",
+      "description1": "Wir sind ein internationales Team mit starkem lateinamerikanischen Einfluss und arbeiten mit Leidenschaft an zukunftsweisenden Lösungen für die Landwirtschaft.",
+      "description2": "Unsere Mischung aus Softwareentwicklern, Elektrotechnikern und Maschinenbauern vereint technisches Know-how mit Innovationsgeist und schafft so eine einzigartige Dynamik.",
+
+      "imageAlt": "Paltech Team"
+    }, 
+
+    
+    "FAQ": {
+      "eyebrow": "FAQ",
+      "title": "Häufig gestellte Fragen",
+      "description": "Antworten auf häufige Fragen zum Produkt, seiner Funktionsweise und dazu, wie man mit unserem Team in Kontakt treten kann.",
+      "items": {
+        "1": {
+          "question": "Welche Unkräuter werden bekämpft?",
+          "answer": "Aktuell liegt der Fokus auf Ampfer. Als nächste Schritte folgen Herbstzeitlose und Kreuzkraut."
+        },
+        "2": {
+          "question": "Wie werden die Unkräuter bekämpft?",
+          "answer": "Der Roboter erkennt die Unkräuter automatisch, positioniert sich präzise darüber und fräst gezielt die Wurzel aus. Dabei werden die Erneuerungsknospen so zerkleinert, dass kein erneutes Austreiben möglich ist. Im Anschluss wird die entstandene Lücke direkt mit Grassamen geschlossen. Der gesamte Prozess ist zu 100 % mechanisch und kommt vollständig ohne Herbizide aus."
+        },
+        "3": {
+          "question": "Wie lange ist die Akkulaufzeit des Roboters?",
+          "answer": "Aktuell beträgt die Akkulaufzeit etwa 10 bis 12 Stunden – abhängig von den jeweiligen Einsatzbedingungen."
+        },
+        "4": {
+          "question": "Was hat es mit der BaySL Digital Förderung auf sich?",
+          "answer": "Der Paltech-Roboter ist auf der Positivliste von BaySL Digital aufgeführt. Dadurch kann der Kauf mit bis zu 40 % gefördert werden. Die Beantragung erfolgt unkompliziert über das Portal iBALIS und ist mit wenigen Klicks erledigt."
+        },
+        "5": {
+          "question": "Kann man sich den Roboter vor Ort anschauen?",
+          "answer": "Ja, wir führen regelmäßig Vorführungen durch. Die aktuellen Termine findet ihr hier."
+        }
+      }, 
+      "more1" : "Deine Frage ist nicht dabei?",
+      "more2" : "Dann schreib uns gerne – wir helfen dir weiter!"
+    },
+    
+    
+    "Nuga": {
+        "title": "Europäische Innovationspartnerschaft (EIP-Agri)",
+        "description1": "Die Europäische Innovationspartnerschaft für landwirtschaftliche Produktivität und Nachhaltigkeit (EIP-Agri) ist ein Förderinstrument der EU. Es hat das Ziel, Innovationen im Agrarsektor zu stärken. Gefördert werden praxisorientierte Projekte, die Landwirtschaft und Ernährung produktiver und gleichzeitig nachhaltiger gestalten",
+        "description2": "Unser Projekt NUGA wird im Rahmen von EIP-Agri durch die Europäische Union und den Freistaat Bayern finanziell unterstützt und hat eine Laufzeit von 24 Monaten.",
+
+        "hero": {
+          "imageAlt": "NUGA",
+          "downloadButton": "Download Erläuterungstafel (PDF)"
+        },
+        "cover": {
+          "slides": [
+            {
+              "title": "NUGA",
+              "subtitle": "EIP-Agri"
+            },
+            {
+              "title": "NUGA",
+              "subtitle": "EIP-Agri"
+            }
+          ]
+        },
+        "ziel": {
+          "title": "Ziel des Projekts",
+          "description": "Ziel des Projekts NUGA ist die Entwicklung eines innovativen Anbaugeräts für Schlepper, das eine mechanische und damit herbizidfreie Bekämpfung von Ampfer und Kreuzkraut im Grünland ermöglicht und somit die Futterqualität erhöht."
+        },
+        "problem": {
+          "title": "Warum Ampfer und Kreuzkraut ein Problem sind",
+          "description": "Ampfer gilt als Platzräuber: Er verdrängt wertvolle Futterpflanzen, bildet tiefe Pfahlwurzeln und produziert eine große Menge langlebiger Samen. Die mechanische Entfernung ist schwierig.",
+          "description2": "Kreuzkraut ist giftig für Tiere, insbesondere für Rinder und Pferde. Selbst im Heu bleibt die Toxizität bestehen.",
+          "description3": "Im ökologischen Landbau dürfen keine chemischen Mittel eingesetzt werden – es bleibt bislang nur das händische Stechen. Dieses benötigt etwa eine Minute pro Pflanze – ein immenser Zeitaufwand, der in Zeiten von Arbeitskräftemangel kaum zu leisten ist.",
+          "imageAlt": "Ampfer und Kreuzkraut im Grünland"
+        },
+        "results": {
+          "title": "Bisherige Ergebnisse",
+          "items": [
+            "Es wurde ein digitaler Zwilling des Anbaugeräts erstellt.",
+            "Verschiedene Methoden zur Optimierung der Einsatzplanung wurden getestet.",
+            "Die Risikoanalyse wurde erfolgreich abgeschlossen.",
+            "Nun beginnt die physische Umsetzung des Anbaugeräts – ein entscheidender Schritt zur Praxisreife."
+          ],
+          "images": [
+            {
+              "alt": "Digitaler Zwilling des Anbaugeräts"
+            },
+            {
+              "alt": "Optimierung der Einsatzplanung"
+            }
+          ]
+        },
+        "cta": {
+          "eyebrow": "Weitere Informationen",
+          "title": "Erläuterungstafel herunterladen",
+          "description": "Laden Sie die Projektunterlagen herunter, um weitere Details zu Förderung, Zielen und Umsetzung von NUGA zu erhalten.",
+          "button": "PDF herunterladen"
+        },
+        "logos": [
+          { "alt": "Partner logo 1" },
+          { "alt": "Partner logo 2" },
+          { "alt": "Partner logo 3" },
+          { "alt": "Partner logo 4" },
+          { "alt": "Partner logo 5" },
+          { "alt": "Partner logo 6" },
+          { "alt": "Partner logo 7" },
+          { "alt": "Partner logo 8" }
+        ]
+      },
+      
+    "NeoBot": {
+          "cover": {
+            "slides": [
+              {
+                "title": "NeoBot",
+                "subtitle": "EIP-Agri"
+              },
+              {
+                "title": "NeoBot",
+                "subtitle": "EIP-Agri"
+              }
+            ]
+          },
+          "hero": {
+            "title": "NeoBot – (Teil)autonome Bekämpfung invasiver Pflanzen",
+            "description": "Entwicklung eines geländegängigen Roboters zur mechanischen, herbizidfreien Bekämpfung invasiver Pflanzenarten – sicher, praxistauglich und umweltschonend.",
+            "imageAlt": "NeoBot",
+            "downloadButton": "Download Projektbeschreibung (PDF)"
+          },
+          "funding": {
+            "eyebrow": "Förderhinweis",
+            "description": "Ein im Rahmen des GAP-Strategieplans Deutschland 2023–2027 gefördertes Projekt im Freistaat Bayern. Gefördert durch die Europäische Innovationspartnerschaft (EIP-Agri)."
+          },
+          "projectGoal": {
+            "eyebrow": "01",
+            "title": "Projektziel",
+            "description": "Invasive Pflanzenarten wie der Riesen-Bärenklau stellen eine zunehmende Herausforderung für Landwirtschaft, Umwelt und öffentliche Sicherheit dar. Sie verdrängen heimische Arten, sind schwer zugänglich und können bei Kontakt gesundheitliche Schäden verursachen.",
+            "description2": "Ziel des Projekts NeoBot ist die Entwicklung eines geländegängigen Roboters, der diese Pflanzen mechanisch und ohne den Einsatz von Herbiziden entfernt. Dabei steht eine praxistaugliche, sichere und umweltschonende Lösung im Fokus.",
+            "imageAlt": "Invasive Pflanzenarten im Gelände",
+            "captionLabel": "Abbildung:",
+            "caption": "Riesenbärenklau kann zu schweren Verbrennungen führen",
+            "source": "Quelle: Stern"
+          },
+          "situation": {
+            "eyebrow": "02",
+            "title": "Ausgangssituation",
+            "description": "Die Bekämpfung invasiver Neophyten erfolgt heute überwiegend:",
+            "items": [
+              "Manuell (arbeitsintensiv und risikobehaftet)",
+              "Chemisch (ökologisch kritisch)",
+              "Oder mit schwer einsetzbarer Technik"
+            ],
+            "description2": "Gerade in schwer zugänglichem Gelände – z. B. an Hängen, Waldrändern oder Gewässern – sind bestehende Lösungen nur eingeschränkt geeignet.",
+            "highlight": "Hier setzt das Projekt NeoBot an."
+          },
+          "solution": {
+            "eyebrow": "03",
+            "title": "Lösungsansatz",
+            "description": "Im Rahmen des Projekts wird ein innovatives System entwickelt, das folgende Eigenschaften kombiniert:",
+            "items": [
+              "Einsatz in unwegsamem Gelände",
+              "Mechanische, herbizidfreie Bekämpfung",
+              "Kombination aus manueller und teilautonomer Steuerung",
+              "Intelligente Erkennung relevanter Pflanzen"
+            ],
+            "description2": "Das System ist modular aufgebaut und kann perspektivisch auch für weitere Anwendungen angepasst werden.",
+            "imageAlt": "Schutzkleidung zur Bekämpfung von Riesen-Bärenklau",
+            "captionLabel": "Abbildung 2:",
+            "caption": "Will man den Riesen-Bärenklau entfernen, ist das Tragen von Schutzkleidung Pflicht. Ansonsten drohen Verbrennungen der Haut.",
+            "source": "Quelle: Merkur"
+          },
+          "results": {
+            "eyebrow": "04",
+            "title": "Erwartete Ergebnisse",
+            "description": "Das Projekt zielt auf die Entwicklung eines funktionsfähigen Demonstrators ab, der unter realen Bedingungen eingesetzt werden kann.",
+            "description2": "Erwartet werden insbesondere:",
+            "items": [
+              "Eine deutliche Reduktion des manuellen Arbeitsaufwands",
+              "Eine Verbesserung der Arbeitssicherheit",
+              "Eine umweltfreundliche Alternative zu chemischen Verfahren",
+              "Neue Ansätze für den Einsatz moderner Technologien in der Landschaftspflege"
+            ],
+            "description3": "Langfristig soll die Lösung zur Förderung der Biodiversität beitragen und neue Perspektiven für den praktischen Einsatz automatisierter Systeme eröffnen."
+          },
+          "activities": {
+            "eyebrow": "05",
+            "title": "Projektaktivitäten",
+            "description": "Das Projekt umfasst mehrere aufeinander abgestimmte Arbeitsschritte:",
+            "items": [
+              "Entwicklung und Integration zentraler Systemkomponenten",
+              "Anpassung an unterschiedliche Einsatzbedingungen",
+              "Aufbau eines sicheren und zuverlässigen Betriebs",
+              "Durchführung von Labor- und Feldtests",
+              "Begleitende Kommunikation und Wissenstransfer"
+            ],
+            "description2": "Ein besonderer Fokus liegt auf der praktischen Erprobung unter realen Bedingungen."
+          },
+          "milestones": {
+            "eyebrow": "06",
+            "title": "Meilensteine",
+            "description": "Diese Schritte bilden die Grundlage für eine mögliche spätere Anwendung in der Praxis.",
+            "cards": [
+              {
+                "year": "2026",
+                "title": "Demonstrator unter kontrollierten Bedingungen"
+              },
+              {
+                "year": "2027",
+                "title": "Einsatzfähiges Gesamtsystem im realen Gelände"
+              }
+            ]
+          }
+        },
+        
+      "Durchwuchskartoffeln": {
+            "cover": {
+              "slides": [
+                {
+                  "title": "Bekämpfung von Durchwuchskartoffeln",
+                  "subtitle": "EIP-Agri"
+                },
+                {
+                  "title": "Bekämpfung von Durchwuchskartoffeln",
+                  "subtitle": "EIP-Agri"
+                }
+              ]
+            },
+            "hero": {
+              "title": "Bekämpfung von Durchwuchskartoffeln",
+              "description": "Entwicklung eines Robotersystems zur gezielten Erkennung und mechanischen Entfernung von Durchwuchskartoffeln – ohne den Einsatz chemischer Pflanzenschutzmittel.",
+              "imageAlt": "Bekämpfung von Durchwuchskartoffeln",
+              "downloadButton": "Download Projektbeschreibung (PDF)"
+            },
+            "funding": {
+              "eyebrow": "Förderhinweis",
+              "description": "Ein im Rahmen des GAP-Strategieplans Deutschland 2023–2027 gefördertes Projekt im Freistaat Bayern. Gefördert durch die Europäische Innovationspartnerschaft (EIP-Agri)."
+            },
+            "projectGoal": {
+              "eyebrow": "01",
+              "title": "Projektziel",
+              "description": "Durchwuchskartoffeln treten in Folgekulturen als unerwünschte Beipflanzen auf und stellen eine zunehmende Herausforderung im Ackerbau dar. Sie konkurrieren mit Nutzpflanzen um Ressourcen und können die Ausbreitung von Krankheiten und Schädlingen fördern.",
+              "description2": "Ziel des Projekts ist die Entwicklung eines Robotersystems, das diese Pflanzen gezielt erkennt und mechanisch entfernt – ohne den Einsatz chemischer Pflanzenschutzmittel.",
+              "imageAlt": "Durchwuchskartoffeln im landwirtschaftlichen Kontext",
+              "captionLabel": "Abbildung 3:",
+              "caption": "Durchwuchskartoffeln in einem Maisbestand",
+              "source": "Quelle: LWK Niedersachsen"
+            },
+            "situation": {
+              "eyebrow": "02",
+              "title": "Ausgangssituation",
+              "description": "Nach der Kartoffelernte verbleiben häufig Knollen im Boden, die in den Folgejahren erneut austreiben. Diese sogenannten Durchwuchskartoffeln:",
+              "items": [
+                "Beeinträchtigen Erträge in Folgekulturen",
+                "Erschweren Fruchtfolgen",
+                "Erhöhen phytosanitäre Risiken",
+                "Sind nur schwer vollständig zu kontrollieren"
+              ],
+              "description2": "Bestehende Verfahren konzentrieren sich oft auf die oberirdischen Pflanzenteile und erreichen die im Boden liegenden Knollen nur unzureichend."
+            },
+            "solution": {
+              "eyebrow": "03",
+              "title": "Lösungsansatz",
+              "description": "Im Projekt wird ein innovatives System entwickelt, das gezielt auf die nachhaltige Bekämpfung im Boden ausgerichtet ist:",
+              "items": [
+                "KI-gestützte Erkennung einzelner Pflanzen",
+                "Punktgenaue Positionierung eines mechanischen Werkzeugs",
+                "Gezielter Eingriff in den Boden zur Schädigung der Knollen",
+                "Kombination aus automatisierter und überwachter Steuerung"
+              ],
+              "description2": "Der Fokus liegt auf einer möglichst vollständigen Unterbrechung des Wachstumszyklus durch die Behandlung der Mutterknollen im Boden."
+            },
+            "results": {
+              "eyebrow": "04",
+              "title": "Erwartete Ergebnisse",
+              "description": "Ziel ist die Entwicklung eines praxistauglichen Systems, das unter realen Bedingungen eingesetzt werden kann.",
+              "description2": "Erwartet werden insbesondere:",
+              "items": [
+                "Eine deutliche Reduktion des Einsatzes von Herbiziden",
+                "Eine effektivere Bekämpfung durch Eingriff im Boden",
+                "Eine Verbesserung der Feldhygiene und Pflanzengesundheit",
+                "Eine Entlastung landwirtschaftlicher Betriebe"
+              ],
+              "description3": "Das System soll sowohl im konventionellen als auch im ökologischen Landbau einsetzbar sein und neue Möglichkeiten für nachhaltige Produktionssysteme eröffnen."
+            },
+            "activities": {
+              "eyebrow": "05",
+              "title": "Projektaktivitäten",
+              "description": "Das Projekt umfasst mehrere zentrale Entwicklungsschritte:",
+              "items": [
+                "Aufbau eines KI-Systems zur Pflanzenerkennung",
+                "Entwicklung mechanischer Werkzeuge zur Knollenbehandlung",
+                "Konstruktion eines geländetauglichen Trägerfahrzeugs",
+                "Integration von Steuerung und Sicherheitsfunktionen",
+                "Durchführung umfangreicher Feldtests"
+              ],
+              "description2": "Ein besonderer Fokus liegt auf der Kombination von Digitalisierung und mechanischer Bearbeitung."
+            },
+            "milestones": {
+              "eyebrow": "06",
+              "title": "Meilensteine",
+              "cards": [
+                {
+                  "title": "Entwicklung und Integration der Kerntechnologie"
+                },
+                {
+                  "title": "Erprobung unter Praxisbedingungen"
+                },
+                {
+                  "title": "Demonstration des Systems im landwirtschaftlichen Einsatz"
+                }
+        ]
+      }
+    },
+
+    
+  "BioBot": {
+        "cover": {
+          "slides": [
+            {
+              "title": "BioBot",
+              "subtitle": ""
+            },
+            {
+              "title": "BioBot",
+              "subtitle": ""
+            }
+          ]
+        },
+        "hero": {
+          "title": "Autonome Robotik zur Förderung der Biodiversität im Straßenbegleitgrün",
+          "description": "Entwicklung eines autonomen Robotersystems zur ökologischen Aufwertung und effizienten Pflege von Straßenbegleitflächen.",
+          "imageAlt": "Straßenbegleitgrün und autonome Pflege"
+        },
+        "funding": {
+          "eyebrow": "Förderhinweis",
+          "description": "Gefördert im Rahmen der Maßnahme Digital GreenTech – Umwelttechnik trifft Robotik durch das Bundesministerium für Forschung, Technologie und Raumfahrt (BMFTR)."
+        },
+        "projectGoal": {
+          "eyebrow": "01",
+          "title": "Projektziel",
+          "description": "Straßenbegleitflächen bieten ein großes, bislang kaum genutztes Potenzial für Natur- und Klimaschutz. Ziel des Projekts ist die Entwicklung eines autonomen Robotersystems, das diese Flächen ökologisch aufwertet und gleichzeitig effizient pflegt.",
+          "description2": "Der Roboter soll:",
+          "items": [
+            "Straßenränder selbstständig befahren",
+            "Selektiv und insektenschonend mähen",
+            "Invasive Pflanzen gezielt zurückdrängen",
+            "Gezielt heimische Arten ausbringen"
+          ],
+          "description3": "Damit werden Straßenränder aktiv zu Biotopverbundachsen entwickelt."
+        },
+        "situation": {
+          "eyebrow": "02",
+          "title": "Ausgangssituation",
+          "description": "Straßenbegleitflächen werden heute meist konventionell gepflegt – oft durch Mulchen oder einfache Mahd. Das führt zu mehreren Problemen:",
+          "items": [
+            "Förderung konkurrenzstarker Pflanzen durch Nährstoffanreicherung",
+            "Verdrängung heimischer Arten",
+            "Starke Ausbreitung invasiver Pflanzen (z. B. Goldrute, Staudenknöterich)",
+            "Hohe Schädigung von Insekten durch ungeeignete Mähtechnik"
+          ],
+          "description2": "Gleichzeitig bleiben große Flächen ökologisch ungenutzt, obwohl sie als Vernetzungskorridore eine wichtige Rolle für die Biodiversität spielen könnten."
+        },
+        "solution": {
+          "eyebrow": "03",
+          "title": "Lösungsansatz",
+          "description": "Das Projekt verfolgt einen integrierten, technologiebasierten Ansatz:",
+          "items": [
+            "Autonome Navigation entlang von Straßenrändern",
+            "KI-basierte Pflanzen- und Umfelderkennung",
+            "Selektive, abschnittsweise Mahd statt flächiger Bearbeitung",
+            "Gezielte Bekämpfung invasiver Arten",
+            "Aktive Nachsaat heimischer Pflanzenarten"
+          ],
+          "description2": "Der Roboter kombiniert Pflege, Monitoring und ökologische Aufwertung in einem System.",
+          "imageAlt": "Straßenbegleitgrün und autonome Pflege"
+        },
+        "logos": [
+          { "alt": "Partner logo 1" },
+          { "alt": "Partner logo 2" },
+          { "alt": "Partner logo 3" },
+          { "alt": "Partner logo 4" }
+        ]
+    }
+    , 
+      "Arbot": {
+        "cover": {
+          "slides": [
+            {
+              "title": "Arbot",
+              "subtitle": "Arbot"
+            },
+            {
+              "title": "Arbot",
+              "subtitle": "Arbot"
+            }
+          ]
+        },
+        "hero": {
+          "title": "Autonome Robotik für die Wiederaufforstung der Wälder",
+          "description": ""
+        },
+        "funding": {
+          "eyebrow": "Förderhinweis",
+          "description": "Gefördert im Rahmen der Initiative KMU-innovativ – Bioökonomie durch das Bundesministerium für Forschung, Technologie und Raumfahrt. "
+        },
+        "projectGoal": {
+          "eyebrow": "01",
+          "title": "Projektziel",
+          "description": "Ziel des Projekts Arbot ist die Entwicklung eines autonomen Pflanzroboters, der die Wiederaufforstung und den Umbau hin zu klimaresilienten Mischwäldern unterstützt.",
+          "description2": "Der Roboter soll:",
+          "items": [
+            "Setzlinge automatisiert pflanzen",
+            "Selbstständig im Wald navigieren",
+            "Unter realen Bedingungen eingesetzt werden",
+            "Den Arbeitsaufwand in der Forstwirtschaft drastisch reduzieren"
+          ],
+          "description3": "Damit wird ein zentraler Engpass der Wiederaufforstung adressiert: der akute Arbeitskräftemangel."
+        },
+        "situation": {
+          "eyebrow": "02",
+          "title": "Ausgangssituation",
+          "description": "Die Wälder stehen vor großen Herausforderungen:",
+          "items": [
+            "Klimawandelbedingte Schäden (Trockenheit, Borkenkäfer)",
+            "Steigender Bedarf an Wiederaufforstung",
+            "Großer Flächenbedarf (hunderttausende Hektar)",
+            "Gleichzeitig sinkende verfügbare Arbeitskräfte"
+          ],
+          "description2": "Die manuelle Pflanzung ist zeitaufwendig, körperlich belastend und schwer skalierbar."
+        },
+        "solution": {
+          "eyebrow": "03",
+          "title": "Lösungsansatz",
+          "description": "Arbot entwickelt einen hoch- bis vollautomatisierten Forstroboter, der folgende Fähigkeiten kombiniert:",
+          "items": [
+            "Autonome Navigation im Wald (auch ohne GPS)",
+            "Erkennung geeigneter Pflanzpositionen",
+            "Präzises Setzen von Setzlingen",
+            "Robuste Mobilität in unstrukturiertem Gelände"
+          ],
+          "description2": "Technologisch basiert das System u. a. auf:",
+          "techItems": [
+            "SLAM-Verfahren zur Lokalisierung",
+            "KI-gestützter Wahrnehmung",
+            "Modularer Robotikplattform"
+          ],
+          "description3": "Ziel ist ein funktionsfähiger Prototyp (TRL 4–5), der im realen Wald getestet wird."
+        }
+      }, 
+      
+      
+  "ContactForm": {
+  "pageNameFallback": "Kontaktformular",
+  "header": {
+    "eyebrow": "",
+    "title": "Kontakt",
+    "description": "Füllen Sie das untenstehende Formular aus und wir melden uns so schnell wie möglich bei Ihnen."
+  },
+  "requestType": {
+    "title": "Art der Anfrage",
+    "description": "Wählen Sie das Thema, das am besten zu Ihrer Anfrage passt.",
+    "options": {
+      "purchase_inquiry": "Kaufanfrage",
+      "demo_registration": "Demo-Anmeldung",
+      "newsletter": "Newsletter abonnieren",
+      "other_request": "Sonstige Anfrage"
+    }
+  },
+  "contactDetails": {
+    "title": "Kontaktdaten"
+  },
+  "purchaseDetails": {
+    "title": "Details zur Kaufanfrage"
+  },
+  "newsletter": {
+    "title": "Newsletter-Anmeldung",
+    "checkbox": "Ich möchte den Newsletter erhalten (bis zu 2 E-Mails pro Jahr)."
+  },
+  "messageSection": {
+    "title": "Nachricht"
+  },
+  "privacy": {
+    "text": "Ich habe die Datenschutzerklärung gelesen und bin damit einverstanden, dass meine Daten zum Zweck der Bearbeitung meiner Anfrage gespeichert und verarbeitet werden."
+  },
+  "fields": {
+    "name": {
+      "label": "Name",
+      "placeholder": "Ihr Name"
+    },
+    "email": {
+      "label": "E-Mail-Adresse",
+      "placeholder": "sie@beispiel.de"
+    },
+    "phone": {
+      "label": "Telefonnummer",
+      "placeholder": "+49 ..."
+    },
+    "company": {
+      "label": "Unternehmen / Betrieb",
+      "placeholder": "Unternehmen / Betrieb"
+    },
+    "address": {
+      "label": "Adresse",
+      "placeholder": "Straße, Ort, Postleitzahl"
+    },
+    "farmSize": {
+      "label": "Betriebsgröße",
+      "placeholder": "z. B. 50 ha"
+    },
+    "anbauverband": {
+      "label": "Anbauverband",
+      "placeholder": "Bitte auswählen"
+    },
+    "weeds": {
+      "label": "Problematische Unkräuter"
+    },
+    "otherWeeds": {
+      "label": "Welche Unkräuter?",
+      "placeholder": "Bitte angeben"
+    },
+    "message": {
+      "label": "Nachricht",
+      "placeholder": "Schreiben Sie hier Ihre Nachricht..."
+    }
+  },
+  "anbauverbandOptions": {
+    "Bioland": "Bioland",
+    "Naturland": "Naturland",
+    "Biokreis": "Biokreis",
+    "Demeter": "Demeter",
+    "Sonstiger": "Sonstiger",
+    "Keiner": "Keiner"
+  },
+  "weeds": {
+    "Ampfer": "Ampfer",
+    "Wasserkreuzkraut": "Wasserkreuzkraut",
+    "Jakobskreuzkraut": "Jakobskreuzkraut",
+    "Herbstzeitlose": "Herbstzeitlose",
+    "Other": "Sonstige"
+  },
+  "errors": {
+    "nameRequired": "Name ist erforderlich.",
+    "emailRequired": "E-Mail ist erforderlich.",
+    "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+    "requestTypeRequired": "Bitte wählen Sie eine Art der Anfrage aus.",
+    "addressRequired": "Adresse ist für eine Kaufanfrage erforderlich.",
+    "anbauverbandRequired": "Bitte wählen Sie einen Anbauverband für die Kaufanfrage aus.",
+    "otherWeedsRequired": "Bitte geben Sie die anderen Unkräuter an.",
+    "messageRequired": "Nachricht ist für sonstige Anfragen erforderlich.",
+    "privacyRequired": "Sie müssen die Datenschutzerklärung akzeptieren, um fortzufahren."
+  },
+  "messages": {
+    "submitSuccess": "Ihre Anfrage wurde erfolgreich gesendet.",
+    "submitErrorDefault": "Beim Senden des Formulars ist ein Fehler aufgetreten.",
+    "submitErrorUnexpected": "Beim Senden des Formulars ist ein unerwarteter Fehler aufgetreten."
+  },
+  "buttons": {
+    "sending": "Wird gesendet...",
+    "submit": "Anfrage senden",
+    "reset": "Zurücksetzen"
+  }
+}, 
+
+
+
+  "Events": {
+    "eyebrow": "Events",
+    "description": "Unsere Vorführungstermine sind bewusst flexibel geplant. Den genauen Ort und Zeitpunkt teilen wir dir in der Woche vorher mit – abhängig von Wetter und Aufwuchs können sich noch Änderungen ergeben.",
+    "items": [
+      {
+        "date": "Kalenderwoche 20",
+        "title": "Feldtag Ampferroboter",
+        "location": "Kempten - 87437",
+        "description": ""
+      },
+      {
+        "date": "Kalenderwoche 24",
+        "title": "Feldtag Ampferroboter",
+        "location": "Kempten - 87437",
+        "description": ""
+      },
+      {
+        "date": "ca. Kalenderwoche 36 bis 40",
+        "title": "Feldtag Ampferroboter",
+        "location": "Salzburg",
+        "description": ""
+      }
+    ]
+  }
+
+      
+  }
+
+

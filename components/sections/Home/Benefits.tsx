@@ -1,66 +1,47 @@
 "use client";
 
 import { motion } from "motion/react";
+import { useTranslations } from "next-intl";
 import Container from "@/components/ui/Container";
 
+type Highlight = {
+  key: string;
+  image: string;
+};
 
-
-const highlights = [
-  {
-    title: "Built from real field practice",
-    description:
-      "Developed from practical experience in organic grassland operations and shaped by real agricultural needs.",
-    image: "/images/product/1.jpg",
-  },
-  {
-    title: "Made for organic farming",
-    description:
-      "Mechanical weed control without chemicals, focused on precision, sustainability, and soil-friendly operation.",
-    image: "/images/product/2.JPG",
-  },
-  {
-    title: "Autonomous & efficient",
-    description:
-      "Detects, plans, and operates autonomously to reduce manual workload and improve productivity.",
-    image: "/images/product/3.jpg",
-  },
-  {
-    title: "Integrated reseeding",
-    description:
-      "After weed removal, grass seed can be applied to help restore and close the grass cover.",
-    image: "/images/product/4.JPG",
-  },
+const highlights: Highlight[] = [
+  { key: "builtFromRealFieldPractice", image: "/images/product/1.jpg" },
+  { key: "madeForOrganicFarming", image: "/images/product/2.JPG" },
+  { key: "autonomousEfficient", image: "/images/product/4.JPG" },
+  { key: "integratedReseeding", image: "/images/product/3.JPG" }
 ];
 
-
 export default function Benefits() {
+  const t = useTranslations("Benefits");
+
   return (
     <section
       id="benefits"
-      className="relative overflow-hidden bg-[#f5f7f8] py-12 md:py-"
+      className="relative overflow-hidden bg-[#f5f7f8] py-12 md:py-24"
     >
       <Container>
         <div className="mx-auto max-w-7xl">
-          
-        <motion.div
+          <motion.div
             initial={{ opacity: 0, y: 22 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.35 }}
             transition={{ duration: 0.65 }}
             className="mx-auto max-w-4xl text-center"
           >
-
-
-            <h2 className=" font-[var(--font-heading)] text-4xl font-semibold tracking-[-0.03em] text-[#06131f] md:text-6xl">
-              BENEFITS
+            <h2 className="font-[var(--font-heading)] text-4xl font-semibold tracking-[-0.03em] text-[#06131f] md:text-6xl">
+              {t("title")}
             </h2>
           </motion.div>
-
 
           <div className="mt-24 grid gap-6 md:grid-cols-2">
             {highlights.map((item, index) => (
               <motion.article
-                key={item.title}
+                key={item.key}
                 initial={{ opacity: 0, y: 22 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.25 }}
@@ -71,24 +52,23 @@ export default function Benefits() {
                   <div className="relative h-[300px] overflow-hidden">
                     <img
                       src={item.image}
-                      alt={item.title}
+                      alt={t(`items.${item.key}.title`)}
                       className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.04]"
                     />
                   </div>
 
                   <div className="flex flex-col justify-center p-7 md:p-8">
                     <h3 className="font-[var(--font-heading)] text-3xl font-semibold tracking-[-0.02em] text-[#06131f]">
-                      {item.title}
+                      {t(`items.${item.key}.title`)}
                     </h3>
                     <p className="mt-4 text-base leading-7 text-[#06131f]/72">
-                      {item.description}
+                      {t(`items.${item.key}.description`)}
                     </p>
                   </div>
                 </div>
               </motion.article>
             ))}
           </div>
-
         </div>
       </Container>
     </section>

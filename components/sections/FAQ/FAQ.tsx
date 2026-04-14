@@ -2,7 +2,12 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
+import { useTranslations } from "next-intl";
 import Container from "@/components/ui/Container";
+
+import { useRouter } from "next/navigation";
+import { useLocale } from "next-intl";
+import Link from "next/link";
 
 type FAQItem = {
   id: number;
@@ -10,43 +15,10 @@ type FAQItem = {
   answer: string;
 };
 
-const faqItems: FAQItem[] = [
-  {
-    id: 1,
-    question: "What is PRATUM designed for?",
-    answer:
-      "PRATUM is an autonomous grassland robot developed for precision weed control without chemicals, with a strong focus on organic farming and efficient field operations.",
-  },
-  {
-    id: 2,
-    question: "In which environments can the robot operate?",
-    answer:
-      "The system is designed for real agricultural conditions, including uneven terrain, long operating periods, and practical field workflows that require robustness and reliability.",
-  },
-  {
-    id: 3,
-    question: "Is PRATUM suitable for organic farming?",
-    answer:
-      "Yes. The product is specifically aligned with the needs of organic grassland management, supporting mechanical weed control and more sustainable agricultural practices.",
-  },
-  {
-    id: 4,
-    question: "Can the system support long working sessions?",
-    answer:
-      "Yes. PRATUM is designed for extended field use, including swap-battery concepts that support longer missions and more flexible daily operation.",
-  },
-  {
-    id: 5,
-    question: "How can I learn more or request a demo?",
-    answer:
-      "You can contact the team directly through the website to request more information, discuss your use case, or arrange a product presentation or demo.",
-  },
-];
-
 function FAQCard({
   item,
   isOpen,
-  onToggle,
+  onToggle
 }: {
   item: FAQItem;
   isOpen: boolean;
@@ -79,7 +51,7 @@ function FAQCard({
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
-            className="overflow-hidden "
+            className="overflow-hidden"
           >
             <div className="px-6 pb-6 pt-0 md:px-8 md:pb-8">
               <p className="max-w-3xl text-base leading-7 text-[#06131f]/70 md:text-lg md:leading-8">
@@ -94,7 +66,39 @@ function FAQCard({
 }
 
 export default function FAQ() {
+  const t = useTranslations("FAQ");
   const [openId, setOpenId] = useState<number | null>(1);
+
+
+  const router = useRouter();
+  const locale = useLocale();
+  const faqItems: FAQItem[] = [
+    {
+      id: 1,
+      question: t("items.1.question"),
+      answer: t("items.1.answer")
+    },
+    {
+      id: 2,
+      question: t("items.2.question"),
+      answer: t("items.2.answer")
+    },
+    {
+      id: 3,
+      question: t("items.3.question"),
+      answer: t("items.3.answer")
+    },
+    {
+      id: 4,
+      question: t("items.4.question"),
+      answer: t("items.4.answer")
+    },
+    {
+      id: 5,
+      question: t("items.5.question"),
+      answer: t("items.5.answer")
+    }
+  ];
 
   return (
     <section
@@ -111,16 +115,15 @@ export default function FAQ() {
             className="mx-auto max-w-3xl text-center"
           >
             <p className="text-4xl font-semibold uppercase tracking-[0.24em] text-[#506c35]">
-              FAQ
+              {t("eyebrow")}
             </p>
 
             <h2 className="mt-4 font-[var(--font-heading)] text-4xl font-semibold tracking-[-0.03em] text-[#06131f] md:text-6xl">
-              Frequently asked questions
+              {t("title")}
             </h2>
 
             <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-[#06131f]/70 md:text-lg">
-              Answers to common questions about the product, its operation, and
-              how to get in touch with the team.
+              {t("description")}
             </p>
           </motion.div>
 
@@ -142,6 +145,18 @@ export default function FAQ() {
                 />
               </motion.div>
             ))}
+          </div>
+          <div className="mx-auto mt-8 flex max-w-2xl flex-col items-center text-center">
+            <p className="text-base leading-relaxed text-[#06131f]/70 md:text-lg">
+              {t("more1")}
+            </p>
+
+            <Link
+              href={`/${locale}/contact`}
+              className="mt-6 rounded-full bg-[#506C35]/90 px-6 py-3 text-sm font-medium text-white transition-all duration-300 hover:bg-[#506C35] hover:shadow-lg md:text-base"
+            >
+              {t("more2")}
+            </Link>
           </div>
         </div>
       </Container>

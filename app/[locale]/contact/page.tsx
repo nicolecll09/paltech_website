@@ -1,16 +1,15 @@
-
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import History from "@/components/sections/About/History";
-import Team from "@/components/sections/About/Team";
-import JoinUs from "@/components/sections/About/JoinUs";
+import Events from "@/components/sections/Contact/Events";
+import ContactInquiryForm from "@/components/sections/Contact/ContactInquiryForm";
 export default function Page() {
   return (
     <main className="min-h-screen  text-white">
+
       <Navbar />
-      <History />
-      <Team />
-      <JoinUs />
+      <ContactInquiryForm />
+      <Events />
+      {/* <Contact /> */}
       <Footer />
     </main>
   );

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
+import { useTranslations } from "next-intl";
 import Container from "@/components/ui/Container";
 
 type Testimonial = {
@@ -12,37 +13,36 @@ type Testimonial = {
   quote: string;
 };
 
-const testimonials: Testimonial[] = [
-  {
-    id: 1,
-    image: "/images/references/1.jpg",
-    name: "Manfred",
-    role: "Organic farmer",
-    quote:
-    "The robots do a very good job. I am very satisfied and have already booked them again for the next season",
-  },
-  {
-    id: 2,
-    image: "/images/references/3.jpg",
-    name: "Elmar",
-    role: "Organic farmer, Spitalhof",
-    quote:
-      "The results speak for themselves. I’m pleased that the robots take over the tedious task of removing dock.",
-  },
-  
-
-];
-
 export default function References() {
+  const t = useTranslations("References");
   const [current, setCurrent] = useState(0);
 
+  const testimonials: Testimonial[] = [
+    {
+      id: 1,
+      image: "/images/references/1.jpg",
+      name: "Manfred",
+      role: t("items.1.role"),
+      quote: t("items.1.quote")
+    },
+    {
+      id: 2,
+      image: "/images/references/3.jpg",
+      name: "Elmar",
+      role: t("items.2.role"),
+      quote: t("items.2.quote")
+    }
+  ];
+
   useEffect(() => {
+    if (testimonials.length <= 1) return;
+
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % testimonials.length);
     }, 6000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [testimonials.length]);
 
   const goTo = (index: number) => setCurrent(index);
   const next = () => setCurrent((prev) => (prev + 1) % testimonials.length);
@@ -58,7 +58,6 @@ export default function References() {
     >
       <Container>
         <div className="mx-auto max-w-7xl">
-          {/* Header */}
           <motion.div
             initial={{ opacity: 0, y: 22 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -66,17 +65,14 @@ export default function References() {
             transition={{ duration: 0.6 }}
             className="mx-auto max-w-3xl text-center"
           >
-
             <h2 className="mt-4 font-[var(--font-heading)] text-4xl font-semibold tracking-[-0.03em] md:text-6xl">
-              Trusted by our customers 
+              {t("title")}
             </h2>
             <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-[#06131f]/70 md:text-lg">
-              Feedback from users and partners who have worked with our
-              technology in practical field environments.
+              {t("description")}
             </p>
           </motion.div>
 
-          {/* Part 1 - Slider */}
           <div className="mt-18 md:mt-20">
             <div className="overflow-hidden rounded-[32px] border border-[#06131f]/8 bg-[#f6f8fa] shadow-[0_25px_80px_rgba(6,19,31,0.08)]">
               <div className="grid min-h-[520px] md:grid-cols-2">
@@ -136,7 +132,7 @@ export default function References() {
                           <button
                             key={item.id}
                             onClick={() => goTo(index)}
-                            aria-label={`Go to testimonial ${index + 1}`}
+                            aria-label={t("goToTestimonial", {number: index + 1})}
                             className={`h-2.5 rounded-full transition-all duration-300 ${
                               isActive
                                 ? "w-10 bg-[#506c35]"
@@ -151,14 +147,14 @@ export default function References() {
                       <button
                         onClick={prev}
                         className="flex h-11 w-11 items-center justify-center rounded-full border border-[#06131f]/10 bg-white text-[#06131f] transition hover:border-[#506c35]/80 hover:bg-[#506c35] hover:text-amber-50"
-                        aria-label="Previous testimonial"
+                        aria-label={t("previousTestimonial")}
                       >
                         ←
                       </button>
                       <button
                         onClick={next}
                         className="flex h-11 w-11 items-center justify-center rounded-full border border-[#06131f]/10 bg-white text-[#06131f] transition hover:border-[#506c35]/80 hover:bg-[#506c35] hover:text-amber-50"
-                        aria-label="Next testimonial"
+                        aria-label={t("nextTestimonial")}
                       >
                         →
                       </button>
@@ -168,32 +164,6 @@ export default function References() {
               </div>
             </div>
           </div>
-
-          {/* Part 2 - YouTube video */}
-          {/* <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.25 }}
-            transition={{ duration: 0.65 }}
-            className="mt-20 rounded-[32px]  p-6 shadow-[0_30px_90px_rgba(6,19,31,0.18)] md:mt-24 md:p-8"
-          >
-            <div className="mb-8 max-w-3xl">
- 
-
-
-            </div>
-
-            <div className="overflow-hidden rounded-[24px] border border-white/10 bg-black">
-              <div className="aspect-video w-full">
-                <iframe
-                  className="h-full w-full"
-                  src="https://www.youtube.com/watch?v=7W4MY_1PFQo&t=5s"
-                  title="YouTube video player"
-                  allowFullScreen
-                />
-              </div>
-            </div>
-          </motion.div> */}
         </div>
       </Container>
     </section>
