@@ -32,8 +32,7 @@ const navItems: NavItem[] = [
     href: "/about",
     subitems: [
       { key: "history", href: "/about#history" },
-      { key: "team", href: "/about#team" },
-      // { key: "joinUs", href: "/about#join-us" }
+      { key: "team", href: "/about#team" }
     ]
   },
   {
@@ -68,9 +67,6 @@ export default function Navbar() {
   const router = useRouter();
 
   const [openItem, setOpenItem] = useState<string | null>(null);
-
-  const currentOpen = navItems.find((item) => item.key === openItem);
-  const hasOpenSubitems = !!currentOpen?.subitems?.length;
 
   const switchLocale = locale === "de" ? "en" : "de";
 
@@ -126,6 +122,43 @@ export default function Navbar() {
                       </span>
                     )}
                   </Link>
+
+                  <AnimatePresence>
+                    {isOpen && hasSubitems && (
+                      <div className="absolute left-0 top-full pt-3">
+                        <motion.div
+                          key={item.key}
+                          initial={{ opacity: 0, y: -12 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: -10 }}
+                          transition={{ duration: 0.22, ease: "easeOut" }}
+                          className="min-w-[240px] overflow-hidden rounded-2xl bg-white shadow-xl"
+                        >
+                          <div className="grid grid-cols-1 gap-2 p-4">
+                            {item.subitems?.map((subitem, index) => (
+                              <motion.div
+                                key={subitem.key}
+                                initial={{ opacity: 0, y: 10 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.18, delay: index * 0.04 }}
+                              >
+                                <Link
+                                  href={subitem.href}
+                                  className="group block rounded-2xl bg-white px-4 py-4 text-left transition hover:bg-[#506c35]"
+                                >
+                                  <div className="flex items-center justify-between gap-4">
+                                    <span className="text-sm font-medium text-black/88 transition group-hover:text-white">
+                                      {t(subitem.key)}
+                                    </span>
+                                  </div>
+                                </Link>
+                              </motion.div>
+                            ))}
+                          </div>
+                        </motion.div>
+                      </div>
+                    )}
+                  </AnimatePresence>
                 </div>
               );
             })}
@@ -140,43 +173,6 @@ export default function Navbar() {
               {switchLocale}
             </button>
           </div>
-
-          <AnimatePresence>
-            {openItem && hasOpenSubitems && (
-              <div className="absolute left-1/2 top-full w-full max-w-xl -translate-x-1/2 pt-3">
-                <motion.div
-                  key={openItem}
-                  initial={{ opacity: 0, y: -12 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -10 }}
-                  transition={{ duration: 0.22, ease: "easeOut" }}
-                  className="overflow-hidden bg-white backdrop-blur-xl"
-                >
-                  <div className="grid grid-cols-1 gap-2 p-4">
-                    {currentOpen?.subitems?.map((subitem, index) => (
-                      <motion.div
-                        key={subitem.key}
-                        initial={{ opacity: 0, y: 10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.18, delay: index * 0.04 }}
-                      >
-                        <Link
-                          href={subitem.href}
-                          className="group block rounded-2xl bg-white px-4 py-4 text-left transition hover:bg-[#506c35]"
-                        >
-                          <div className="flex items-center justify-between gap-4">
-                            <span className="text-sm font-medium text-black/88 transition group-hover:text-white">
-                              {t(subitem.key)}
-                            </span>
-                          </div>
-                        </Link>
-                      </motion.div>
-                    ))}
-                  </div>
-                </motion.div>
-              </div>
-            )}
-          </AnimatePresence>
         </Container>
       </header>
     </div>
