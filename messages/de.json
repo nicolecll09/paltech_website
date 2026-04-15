@@ -50,7 +50,7 @@
     
   "Product": {
     "subtitle": "Der autonome Grünlandroboter",
-    "description": "Präzise Unkrautbekämpfung ohne Chemie, entwickelt für den ökologischen Grünlandbetrieb und den autonomen Feldeinsatz.",
+    "description": "Prãzise kommt zweimal dicht hintereinander vor. Stattdessen kannst du auch akkurat, genau, exakt einsetzen.",
     "robotImageAlt": "PRATUM autonomer Grünlandroboter",
     "supportBanner": "Förderfähig über BaySL Digital: bis zu 40 % Zuschuss zum Kaufpreis.",
     "features": {
@@ -60,7 +60,7 @@
       },
       "obstacleDetectionStatusDisplay": {
         "title": "Hinderniserkennung & Statusanzeige",
-        "text": "Integrierte Sensorik und visuelles Feedback für einen sichereren autonomen Betrieb."
+        "text": "Integrierte Sensorik und visuelles Feedback für einen sichereren, autonomen Betrieb."
       },
       "oscillatingAxleUnevenTerrain": {
         "title": "Pendelachse für unebenes Gelände",
@@ -90,7 +90,7 @@
       },
       "autonomousEfficient": {
         "title": "Autonom & effizient",
-        "description": "Erkennt, plant und arbeitet autonom, um manuelle Arbeit zu reduzieren und die Produktivität zu steigern."
+        "description": "Der Roboter erkennt, plant und arbeitet autonom, um manuelle Arbeit zu reduzieren und die Produktivität zu steigern."
       },
       "integratedReseeding": {
         "title": "Integrierte Nachsaat",
@@ -116,7 +116,7 @@
         },
         "integratedReseeding": {
           "title": "Integrierte Nachsaat",
-          "description": "Nach der Bekämpfung wird Grassamen zur Schließung der Grasnarbe ausgebracht."
+          "description": "Nach der Bekämpfung werden Grassamen zur Schließung der Grasnarbe ausgebracht."
         }
       }
     }, 
