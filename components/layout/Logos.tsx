@@ -3,6 +3,9 @@
 import { useEffect, useMemo, useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import Container from "@/components/ui/Container";
+import {useTranslations} from "next-intl";
+
+
 
 export type LogoItem = {
   id: number;
@@ -25,6 +28,8 @@ export default function Logos({ logos }: { logos: LogoItem[] }) {
 
   const extended = [...logos, ...logos];
 
+  const t = useTranslations("");
+
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => prev + 1);
@@ -39,7 +44,7 @@ export default function Logos({ logos }: { logos: LogoItem[] }) {
         <div className="mx-auto max-w-7xl">
           <div className="mb-8">
             <p className="text-4xl font-semibold uppercase tracking-[0.22em] text-[#506c35]">
-              Supported by
+              {t("Supported")}
             </p>
 
           </div>

@@ -150,7 +150,7 @@ export default function NugaPage() {
               </p>
             </motion.div>
 
-            <Logos logos={logos} />
+            {/* <Logos logos={logos} /> */}
           </Container>
         </section>
 
