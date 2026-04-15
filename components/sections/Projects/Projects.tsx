@@ -4,7 +4,6 @@ import { useRef } from "react";
 import { motion } from "motion/react";
 import Container from "@/components/ui/Container";
 import { Link } from "@/i18n/navigation";
-// import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react";
 
 type ProjectItem = {
   id: number;
