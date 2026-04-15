@@ -69,7 +69,6 @@ export default function FAQ() {
   const t = useTranslations("FAQ");
   const [openId, setOpenId] = useState<number | null>(1);
 
-
   const router = useRouter();
   const locale = useLocale();
   const faqItems: FAQItem[] = [

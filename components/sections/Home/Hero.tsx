@@ -39,7 +39,6 @@ export default function Hero() {
         href: "#footer"
       }
     },
-    // Si luego quieres más slides:
     {
       id: 2,
       videoSrc: "/videos/video_2.mp4",

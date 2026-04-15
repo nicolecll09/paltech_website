@@ -3,6 +3,10 @@
 import { motion } from "motion/react";
 import { useTranslations } from "next-intl";
 import Container from "@/components/ui/Container";
+import { useRouter } from "next/navigation";
+import { useLocale } from "next-intl";
+import Link from "next/link";
+
 
 type Feature = {
   key: string;
@@ -38,7 +42,9 @@ function FeatureLabel({
 }
 
 export default function Product() {
+
   const t = useTranslations("Product");
+  const locale = useLocale();
 
   return (
     <section
@@ -134,9 +140,17 @@ export default function Product() {
             transition={{ duration: 0.6 }}
             className="mt-24 rounded-[24px] border border-[#506c35]/15 bg-[#506c35] px-6 py-7 text-center md:px-10"
           >
-            <p className="text-2xl font-semibold tracking-[-0.02em] text-[#ffffff] md:text-3xl">
+            {/* <p className="text-2xl font-semibold tracking-[-0.02em] text-[#ffffff] md:text-3xl">
               {t("supportBanner")}
-            </p>
+            </p> */}
+
+            <Link
+              href={`/${locale}/contact`}
+              className="ext-2xl font-semibold tracking-[-0.02em] text-[#ffffff] md:text-3xl"
+            >
+              {t("supportBanner")}
+            </Link>
+            
           </motion.div>
         </div>
       </Container>
