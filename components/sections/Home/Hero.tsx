@@ -38,22 +38,22 @@ export default function Hero() {
         label: t("slide1.secondaryButton"),
         href: "#footer"
       }
-    }
+    },
     // Si luego quieres más slides:
-    // {
-    //   id: 2,
-    //   videoSrc: "/videos/hero-2.mp4",
-    //   title: t("slide2.title"),
-    //   subtitle: t("slide2.subtitle"),
-    //   primaryButton: {
-    //     label: t("slide2.primaryButton"),
-    //     href: "#applications"
-    //   },
-    //   secondaryButton: {
-    //     label: t("slide2.secondaryButton"),
-    //     href: "#about"
-    //   }
-    // }
+    {
+      id: 2,
+      videoSrc: "/videos/video_2.mp4",
+      title: t("slide1.title"),
+      subtitle: t("slide1.subtitle"),
+      primaryButton: {
+        label: t("slide1.primaryButton"),
+        href: "#product"
+      },
+      secondaryButton: {
+        label: t("slide1.secondaryButton"),
+        href: "#footer"
+      }
+    }
   ];
 
   useEffect(() => {
