@@ -247,39 +247,6 @@ export default function NugaPage() {
           </Container>
         </section>
 
-        {/* CTA PDF */}
-        {/* <section className="bg-[#102018] py-20 text-white md:py-28">
-          <Container>
-            <div className="mx-auto max-w-4xl text-center">
-              <motion.div
-                initial={{ opacity: 0, y: 22 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.25 }}
-                transition={{ duration: 0.6 }}
-              >
-                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#b8d2a8]">
-                  {t("cta.eyebrow")}
-                </p>
-
-                <h2 className="mt-4 font-[var(--font-heading)] text-3xl font-semibold tracking-[-0.03em] md:text-5xl">
-                  {t("cta.title")}
-                </h2>
-
-                <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-white/72 md:text-lg">
-                  {t("cta.description")}
-                </p>
-
-                <a
-                  href="/pdfs/erlaeuterungstafel.pdf"
-                  className="mt-8 inline-flex items-center rounded-full bg-white px-7 py-3 text-sm font-semibold text-[#102018] transition hover:bg-white/90"
-                >
-                  <p className="text-black">{t("cta.button")}</p>
-                </a>
-              </motion.div>
-            </div>
-          </Container>
-        </section> */}
-
         <Footer />
       </main>
     </>
