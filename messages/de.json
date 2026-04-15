@@ -50,13 +50,13 @@
     
   "Product": {
     "subtitle": "Der autonome Grünlandroboter",
-    "description": "Exakt Unkrautbekämpfung ohne Chemie – entwickelt für Biogrünland",
+    "description": "Präzise Unkrautbekämpfung ohne Chemie - entwickelt für den Biobetrieb und den autonomen Feldeinsatz.",
     "robotImageAlt": "PRATUM autonomer Grünlandroboter",
     "supportBanner": "Förderfähig über BaySL Digital: bis zu 40 % Zuschuss zum Kaufpreis.",
     "features": {
       "multiStageAiDetection": {
         "title": "Mehrstufige KI-Erkennung",
-        "text": "Fortschrittliche Wahrnehmung für eine präzise Identifikation von Unkräutern im Grünland."
+        "text": "Fortschrittliche Wahrnehmung für eine exakte Identifikation von Unkräutern im Grünland."
       },
       "obstacleDetectionStatusDisplay": {
         "title": "Hinderniserkennung & Statusanzeige",
