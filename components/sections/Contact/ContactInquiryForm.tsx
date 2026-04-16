@@ -17,7 +17,7 @@ type WeedOption =
   | "Other";
 
 type FormState = {
-  requestType: RequestType;
+  requestTypes: RequestType[];
   name: string;
   email: string;
   phone: string;
@@ -32,7 +32,7 @@ type FormState = {
   privacyAccepted: boolean;
 };
 
-type Errors = Partial<Record<keyof FormState, string>>;
+type Errors = Partial<Record<keyof FormState | "requestTypes", string>>;
 
 const ANBAUVERBAND_OPTIONS = [
   "Bioland",
@@ -52,7 +52,7 @@ const WEED_OPTIONS: WeedOption[] = [
 ];
 
 const INITIAL_STATE: FormState = {
-  requestType: "purchase_inquiry",
+  requestTypes: [],
   name: "",
   email: "",
   phone: "",
@@ -77,11 +77,12 @@ export default function ContactInquiryForm() {
   const [form, setForm] = useState<FormState>(INITIAL_STATE);
   const [errors, setErrors] = useState<Errors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitSuccess, setSubmitSuccess] = useState<string>("");
-  const [submitError, setSubmitError] = useState<string>("");
+  const [submitSuccess, setSubmitSuccess] = useState("");
+  const [submitError, setSubmitError] = useState("");
 
-  const isPurchaseInquiry = form.requestType === "purchase_inquiry";
-  const isOtherRequest = form.requestType === "other_request";
+  const isPurchaseInquiry = form.requestTypes.includes("purchase_inquiry");
+  const isOtherRequest = form.requestTypes.includes("other_request");
+  const isNewsletterRequest = form.requestTypes.includes("newsletter");
   const showOtherWeeds = form.weeds.includes("Other");
 
   const pageName = useMemo(() => {
@@ -94,6 +95,28 @@ export default function ContactInquiryForm() {
   const updateField = <K extends keyof FormState>(key: K, value: FormState[K]) => {
     setForm((prev) => ({ ...prev, [key]: value }));
     setErrors((prev) => ({ ...prev, [key]: undefined }));
+    setSubmitError("");
+    setSubmitSuccess("");
+  };
+
+  const toggleRequestType = (type: RequestType) => {
+    setForm((prev) => {
+      const exists = prev.requestTypes.includes(type);
+
+      const nextRequestTypes = exists
+        ? prev.requestTypes.filter((item) => item !== type)
+        : [...prev.requestTypes, type];
+
+      return {
+        ...prev,
+        requestTypes: nextRequestTypes,
+        newsletter: nextRequestTypes.includes("newsletter")
+          ? true
+          : prev.newsletter,
+      };
+    });
+
+    setErrors((prev) => ({ ...prev, requestTypes: undefined }));
     setSubmitError("");
     setSubmitSuccess("");
   };
@@ -122,7 +145,9 @@ export default function ContactInquiryForm() {
     return t(`weeds.${weed}`);
   };
 
-  const getAnbauverbandLabel = (option: (typeof ANBAUVERBAND_OPTIONS)[number]) => {
+  const getAnbauverbandLabel = (
+    option: (typeof ANBAUVERBAND_OPTIONS)[number]
+  ) => {
     return t(`anbauverbandOptions.${option}`);
   };
 
@@ -139,8 +164,8 @@ export default function ContactInquiryForm() {
       nextErrors.email = t("errors.emailInvalid");
     }
 
-    if (!form.requestType) {
-      nextErrors.requestType = t("errors.requestTypeRequired");
+    if ((form.requestTypes ?? []).length === 0) {
+            nextErrors.requestTypes = t("errors.requestTypeRequired");
     }
 
     if (isPurchaseInquiry) {
@@ -172,6 +197,7 @@ export default function ContactInquiryForm() {
     setForm(INITIAL_STATE);
     setErrors({});
     setSubmitError("");
+    setSubmitSuccess("");
   };
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -189,7 +215,7 @@ export default function ContactInquiryForm() {
 
     try {
       const payload = {
-        requestType: form.requestType,
+        requestTypes: form.requestTypes,
         name: form.name.trim(),
         email: form.email.trim(),
         phone: form.phone.trim(),
@@ -200,8 +226,7 @@ export default function ContactInquiryForm() {
         weeds: form.weeds,
         otherWeeds: form.otherWeeds.trim(),
         message: form.message.trim(),
-        newsletter:
-          form.requestType === "newsletter" ? true : Boolean(form.newsletter),
+        newsletter: isNewsletterRequest ? true : Boolean(form.newsletter),
         pageUri: typeof window !== "undefined" ? window.location.href : "",
         pageName,
       };
@@ -244,8 +269,8 @@ export default function ContactInquiryForm() {
     "rounded-[24px] border border-[#06131f]/8 bg-white p-5 shadow-[0_12px_35px_rgba(6,19,31,0.04)]";
 
   return (
-    <section className="bg-[#F5F7F8]/90 bg-cover bg-center bg-no-repeat py-24 md:py-32">      
-    <form
+    <section className="bg-[#F5F7F8]/90 bg-cover bg-center bg-no-repeat py-24 md:py-32">
+      <form
         onSubmit={handleSubmit}
         className="mx-auto w-full max-w-5xl rounded-[32px] border border-[#06131f]/8 bg-white p-6 shadow-[0_24px_70px_rgba(6,19,31,0.06)] md:p-10"
       >
@@ -291,7 +316,7 @@ export default function ContactInquiryForm() {
                   label: t("requestType.options.other_request"),
                 },
               ].map((option) => {
-                const isActive = form.requestType === option.value;
+                const isActive = form.requestTypes.includes(option.value);
 
                 return (
                   <label
@@ -303,11 +328,9 @@ export default function ContactInquiryForm() {
                     }`}
                   >
                     <input
-                      type="radio"
-                      name="requestType"
-                      value={option.value}
-                      checked={form.requestType === option.value}
-                      onChange={() => updateField("requestType", option.value)}
+                      type="checkbox"
+                      checked={isActive}
+                      onChange={() => toggleRequestType(option.value)}
                       className="h-4 w-4 accent-[#506c35]"
                     />
                     <span className="text-sm font-medium text-[#06131f] md:text-base">
@@ -318,8 +341,8 @@ export default function ContactInquiryForm() {
               })}
             </div>
 
-            {errors.requestType && (
-              <p className="mt-3 text-sm text-red-600">{errors.requestType}</p>
+            {errors.requestTypes && (
+              <p className="mt-3 text-sm text-red-600">{errors.requestTypes}</p>
             )}
           </section>
 
@@ -439,7 +462,9 @@ export default function ContactInquiryForm() {
                     onChange={(e) => updateField("anbauverband", e.target.value)}
                     className={inputClassName}
                   >
-                    <option value="">{t("fields.anbauverband.placeholder")}</option>
+                    <option value="">
+                      {t("fields.anbauverband.placeholder")}
+                    </option>
                     {ANBAUVERBAND_OPTIONS.map((option) => (
                       <option key={option} value={option}>
                         {getAnbauverbandLabel(option)}
@@ -505,7 +530,7 @@ export default function ContactInquiryForm() {
             </section>
           )}
 
-          {form.requestType === "newsletter" && (
+          {isNewsletterRequest && (
             <section className={cardClassName}>
               <div>
                 <h3 className="font-[var(--font-heading)] text-2xl font-semibold tracking-[-0.02em] text-[#06131f]">
@@ -557,7 +582,9 @@ export default function ContactInquiryForm() {
               <input
                 type="checkbox"
                 checked={form.privacyAccepted}
-                onChange={(e) => updateField("privacyAccepted", e.target.checked)}
+                onChange={(e) =>
+                  updateField("privacyAccepted", e.target.checked)
+                }
                 className="mt-1 h-4 w-4 accent-[#506c35]"
               />
               <span className="text-sm leading-6 text-[#06131f]/72 md:text-base">
