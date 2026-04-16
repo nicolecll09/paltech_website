@@ -55,15 +55,9 @@ export default function DurchwuchskartoffelnPage() {
   const slides: ImageSlide[] = [
     {
       id: 1,
-      src: "/images/cover/cow.JPG",
+      src: "images/kartoffeln/kartoffeln.jpeg",
       title: t("cover.slides.0.title"),
       subtitle: t("cover.slides.0.subtitle"),
-    },
-    {
-      id: 2,
-      src: "/images/cover/berg.jpg",
-      title: t("cover.slides.1.title"),
-      subtitle: t("cover.slides.1.subtitle"),
     },
   ];
 

@@ -27,7 +27,7 @@ export default function References() {
     },
     {
       id: 2,
-      image: "/images/references/3.jpg",
+      image: "/images/references/3.jpeg",
       name: "Elmar",
       role: t("items.2.role"),
       quote: t("items.2.quote")
