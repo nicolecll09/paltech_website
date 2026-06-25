@@ -91,13 +91,13 @@ export default function NeoBotPage() {
   const slides: ImageSlide[] = [
     {
       id: 1,
-      src: "/images/cover/cow.JPG",
+      src: "/images/neobot/new_1.jpeg",
       title: t("cover.slides.0.title"),
       subtitle: t("cover.slides.0.subtitle"),
     },
     {
       id: 2,
-      src: "/images/cover/berg.jpg",
+      src: "/images/neobot/new_2.jpeg",
       title: t("cover.slides.1.title"),
       subtitle: t("cover.slides.1.subtitle"),
     },
