@@ -15,23 +15,13 @@ type Job = {
 const jobs: Job[] = [
   {
     id: 1,
-    title: "Robotics Software Engineer",
-    location: "Germany / Remote",
+    title: " Mechanik Entwickler (m/w/d)",
+    location: "Deutschland",
     type: "Full-time",
     description:
-      "Description of the job",
-    href: "#",
+      "See more",
+    href: "/jobs/Ausschreibung_Maschbau_2026.pdf",
   },
-  {
-    id: 2,
-    title: "Computer Vision Engineer",
-    location: "Germany",
-    type: "Full-time",
-    description:
-    "Description of the job",
-    href: "#",
-  },
-
 
 ];
 
@@ -69,13 +59,16 @@ export default function JoinUs() {
           {/* Jobs grid */}
           <div className="mt-20 grid gap-6 md:grid-cols-2 lg:grid-cols-2">
             {jobs.map((job, index) => (
-              <motion.article
+              <motion.a
                 key={job.id}
+                href={job.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 initial={{ opacity: 0, y: 22 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.25 }}
                 transition={{ duration: 0.5, delay: index * 0.08 }}
-                className="group relative overflow-hidden rounded-[28px] border border-[#06131f]/8 bg-white p-8 shadow-[#506c35]/60 transition hover:shadow-[0_25px_80px_rgba(6,19,31,0.12)]"
+                className="group relative block overflow-hidden rounded-[28px] border border-[#06131f]/8 bg-white p-8 shadow-[#506c35]/60 transition hover:shadow-[0_25px_80px_rgba(6,19,31,0.12)] hover:-translate-y-1"
               >
                 {/* subtle hover glow */}
                 <div className="pointer-events-none absolute inset-0 opacity-0 transition group-hover:opacity-100">
@@ -97,25 +90,18 @@ export default function JoinUs() {
                     {job.title}
                   </h3>
 
-                  <p className="mt-4 text-base leading-7 text-[#06131f]/70">
-                    {job.description}
-                  </p>
-
                   <div className="mt-8">
-                    <a
-                      href={job.href}
-                      className="inline-flex items-center gap-2 text-sm font-semibold text-[#06131f] transition hover:gap-3"
-                    >
-                      View position →
-                    </a>
+                    <span className="inline-flex items-center gap-2 text-sm font-semibold text-[#06131f] transition group-hover:gap-3">
+                    Stelle ansehen
+                    </span>
                   </div>
                 </div>
-              </motion.article>
+              </motion.a>
             ))}
           </div>
 
           {/* Bottom CTA */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.45 }}
@@ -134,7 +120,7 @@ export default function JoinUs() {
             >
               Send us an open application →
             </a>
-          </motion.div>
+          </motion.div> */}
         </div>
       </Container>
     </section>

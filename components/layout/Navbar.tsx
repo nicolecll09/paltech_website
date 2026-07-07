@@ -32,7 +32,8 @@ const navItems: NavItem[] = [
     href: "/about",
     subitems: [
       { key: "history", href: "/about#history" },
-      { key: "team", href: "/about#team" }
+      { key: "team", href: "/about#team" },
+      { key: "joinUs", href: "/about#join-us" }
     ]
   },
   {

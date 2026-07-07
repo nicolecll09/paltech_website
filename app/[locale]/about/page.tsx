@@ -10,7 +10,7 @@ export default function Page() {
       <Navbar />
         <History />
         <Team />
-        {/* <JoinUs /> */}
+        <JoinUs />
       <Footer />
     </main>
   );
