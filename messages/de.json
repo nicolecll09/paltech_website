@@ -33,7 +33,14 @@
     "privacy" : "Datenschutzerklaerung",
     "rights" : "All rights reserved"
 
-  }, 
+  },
+
+  "JoinUs": {
+    "title": "Kontakt",
+    "subtitle": "Werde Teil unseres Teams",
+    "description":  "Wir suchen Menschen, die echte Probleme in der Praxis lösen möchten, idealerweise einen Bezug zur Landwirtschaft haben und durch die Entwicklung nachhaltiger Technologie einen Beitrag leisten wollen."
+  },
+
 
   "Hero": {
     "slide1": {

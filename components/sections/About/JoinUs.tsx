@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import Container from "@/components/ui/Container";
+import { useTranslations } from "next-intl";
 
 type Job = {
   id: number;
@@ -26,6 +27,10 @@ const jobs: Job[] = [
 ];
 
 export default function JoinUs() {
+
+
+  const t = useTranslations("JoinUs");
+  
   return (
     <section
       id="join-us"
@@ -42,17 +47,14 @@ export default function JoinUs() {
             className="mx-auto max-w-3xl text-center"
           >
             <p className="text-5xl font-semibold uppercase tracking-[0.24em] text-[#506c35]">
-              Join Us
+              {t("subtitle")}
             </p>
 
             <h2 className="mt-4 font-[var(--font-heading)] text-4xl font-semibold tracking-[-0.03em] text-[#06131f] md:text-6xl">
-              {/* Build the future of agricultural robotics */}
             </h2>
 
             <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-[#06131f]/70 md:text-lg">
-              We are looking for people who want to work on real-world problems,
-              close to the field, and contribute to meaningful, sustainable
-              technology.
+              {t("description")}
             </p>
           </motion.div>
 

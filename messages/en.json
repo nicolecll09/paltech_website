@@ -45,7 +45,12 @@
         "goToSlide": "Go to slide {number}"
     }, 
 
-
+    "JoinUs": {
+      "title": "Join our team",
+      "subtitle": "Join our team",
+      "description":  "We are looking for people who want to work on real-world problems, close to the field, and contribute to meaningful, sustainable technology."
+    },
+  
     
       "Product": {
         "subtitle": "The autonomous grassland robot",
