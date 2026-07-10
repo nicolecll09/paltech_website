@@ -18,12 +18,32 @@ const jobs: Job[] = [
     id: 1,
     title: " Mechanik Entwickler (m/w/d)",
     location: "Deutschland",
-    type: "Full-time",
+    type: "Vollzeit",
     description:
       "See more",
     href: "/jobs/Ausschreibung_Maschbau_2026.pdf",
   },
 
+  {
+    id: 2,
+    title: "Technischer Vertriebsingenieur (m/w/d)",
+    location: "Deutschland",
+    type: "Vollzeit",
+    description:
+      "See more",
+    href: "/jobs/Technischer_Vertriebsingenieur.pdf",
+  },
+
+
+  {
+    id: 3,
+    title: "Servicetechniker (m/w/d)",
+    location: "Deutschland",
+    type: "Vollzeit/ Teilzeit",
+    description:
+      "See more",
+    href: "/jobs/Servicetechniker.pdf",
+  },
 ];
 
 export default function JoinUs() {
