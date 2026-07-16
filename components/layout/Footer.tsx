@@ -10,7 +10,7 @@ import SecurityIcon from '@mui/icons-material/Security';
 import { useTranslations, useLocale } from "next-intl";
 
 import { use } from "react";
-
+import { Link } from "@/i18n/navigation";
 
 export default function Footer() {
 
@@ -88,13 +88,14 @@ export default function Footer() {
             <div className="flex flex-col gap-3 pt-6 text-xl">
 
               <div className="flex flex-row gap-2">
+
+              <Link
+                href="/impressum"
+                className="flex items-center gap-2 transition hover:text-white"
+              >
                 <InfoIcon />
-                <a
-                  href="/impressum"
-                  className="transition hover:text-white"
-                >
-                  {t("impressum")}
-                </a>
+                <span>{t("impressum")}</span>
+              </Link>
               </div>
 
               <div className="flex flex-row gap-2">
