@@ -1,6 +1,6 @@
 export default function Page() {
     return (
-      <main className="min-h-screen bg-zinc-950 px-6 py-12 text-white">
+      <main className="min-h-screen bg-[#506c35] px-6 py-12 text-white">
         <div className="mx-auto max-w-3xl space-y-6">
           <h1 className="text-4xl font-bold">Impressum</h1>
   
