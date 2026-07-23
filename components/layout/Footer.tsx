@@ -59,21 +59,22 @@ export default function Footer() {
 
               <div className="flex flex-row gap-2">
                 <LocalPhoneIcon />
-                <p>+49 831 52751458</p>
+                <p>+49 831 52 73 26 64</p>
+
               </div>
               <p className="text-white/60 ml-8">Paltech GmbH</p>
 
 
               <div className="flex flex-row gap-2">
                 <LocalPhoneIcon />
-                <p>+49 831 52727129</p>
+                <p>+49 831 52 72 03 45</p>
               </div>
               <p className="text-white/60 ml-8">EIP Anbaugerät</p>
 
 
               <div className="flex flex-row gap-2">
                 <LocalPhoneIcon />
-                <p>+49 831 52741438</p>
+                <p>+49 831 52 73 30 63</p>
               </div>
               <p className="text-white/60 ml-8">EIP Kennarten/Bärenklau</p>
 

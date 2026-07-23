@@ -32,7 +32,11 @@ export default function Page() {
           <div>
             <h2 className="mb-2 text-2xl font-semibold">Kontakt</h2>
             <p>
-              Telefon: 0176 64279882
+              Telefon <br />
+              0831 52 73 26 64 <br />
+              0831 52 72 03 45 <br />
+              0831 52 73 30 63
+
               <br />
               E-Mail:{" "}
               <a
