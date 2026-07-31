@@ -55,28 +55,29 @@ export default function Footer() {
                 <RoomIcon />
                 <p>Kaufbeurer Str. 85, 87437 Kempten (Allgäu)</p>
               </div>
-
-
-              <div className="flex flex-row gap-2">
-                <LocalPhoneIcon />
-                <p>+49 831 52 73 26 64</p>
-
-              </div>
-              <p className="text-white/60 ml-8">Paltech GmbH</p>
-
+              <p className="text-white/60 mt-1">Paltech GmbH</p>
 
               <div className="flex flex-row gap-2">
                 <LocalPhoneIcon />
                 <p>+49 831 52 72 03 45</p>
+                
               </div>
-              <p className="text-white/60 ml-8">EIP Anbaugerät</p>
 
+              <p className="text-white/60 mt-1">Anfragen / Vertrieb</p>
+
+              <div className="flex flex-row gap-2">
+                <LocalPhoneIcon />
+                <p>+49 831 52 73 26 64</p>
+              </div>
+
+
+              <p className="text-white/60 mt-1">Förderprojekte (EIP Agri)</p>
 
               <div className="flex flex-row gap-2">
                 <LocalPhoneIcon />
                 <p>+49 831 52 73 30 63</p>
               </div>
-              <p className="text-white/60 ml-8">EIP Kennarten/Bärenklau</p>
+
 
             </div>
           </div>
@@ -100,14 +101,14 @@ export default function Footer() {
               </div>
 
               <div className="flex flex-row gap-2">
-                <SecurityIcon />
 
-                <a
-                  href="/privacy"
-                  className="transition hover:text-white"
-                >
-                  {t("privacy")}
-                </a>
+                <Link
+                href="/privacy"
+                className="flex items-center gap-2 transition hover:text-white"
+              >
+                <SecurityIcon />
+                <span>{t("privacy")}</span>
+              </Link>
 
               </div>
             </div>
